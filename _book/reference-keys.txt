@@ -1,0 +1,16 @@
+diseño-estadístico
+qué-es-la-estadística
+población-objetivo-po-universo
+coberturas-estadísticas
+unidades-estadísticas
+fuentes-de-información
+enfoques-para-el-análisis
+fuentes-de-información-enfoques-de-análisis
+validez-interna-y-externa
+fuentes-de-información-tipos-de-validez
+sesgos-posibles-en-la-producción-de-datos
+tipos-frecuentes-de-sesgo
+fuentes-de-información-sesgos-más-probables
+variables-y-tipología
+medición
+ordenación-de-los-datos
