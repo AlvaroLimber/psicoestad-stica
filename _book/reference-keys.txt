@@ -9,7 +9,6 @@ fuentes-de-información-enfoques-de-análisis
 validez-interna-y-externa
 fuentes-de-información-tipos-de-validez
 sesgos-posibles-en-la-producción-de-datos
-tipos-frecuentes-de-sesgo
 fuentes-de-información-sesgos-más-probables
 variables-y-tipología
 medición
