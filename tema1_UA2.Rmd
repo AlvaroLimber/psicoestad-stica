@@ -177,5 +177,3 @@ Pasos clave en la medición:
 4. **Estandarizar los procedimientos** de recolección para minimizar sesgos y garantizar la calidad de los datos [@LSJ2025].
 
 *Ejemplo:* Medir el estrés académico en estudiantes universitarios utilizando una escala validada, aplicada bajo las mismas condiciones para todos los participantes y con un protocolo claro de codificación.
-
-## Ordenación de los datos

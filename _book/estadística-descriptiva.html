@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Estadística descriptiva | Psicoestadística</title>
+  <meta name="description" content="Este libro esta destinado a la materia de Psicoestadística de la carrera de Psicología de la Universidad Católica Boliviana, sede La Paz." />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Estadística descriptiva | Psicoestadística" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Este libro esta destinado a la materia de Psicoestadística de la carrera de Psicología de la Universidad Católica Boliviana, sede La Paz." />
+  <meta name="github-repo" content="alvarolimber/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Estadística descriptiva | Psicoestadística" />
+  
+  <meta name="twitter:description" content="Este libro esta destinado a la materia de Psicoestadística de la carrera de Psicología de la Universidad Católica Boliviana, sede La Paz." />
+  
+
+<meta name="author" content="MSc. Alvaro Chirino Gutierrez" />
+
+
+<meta name="date" content="2025-08-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="diseño-estadístico.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#audiencia"><i class="fa fa-check"></i>Audiencia</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#estructura-del-libro"><i class="fa fa-check"></i>Estructura del libro</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="tema2_UA1.html"><a href="#dise%C3%B1o-estad%C3%ADstico"><i class="fa fa-check"></i><b>1</b> Diseño estadístico</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="tema2_UA1.html"><a href="#qu%C3%A9-es-la-estad%C3%ADstica"><i class="fa fa-check"></i><b>1.1</b> ¿Qué es la estadística?</a></li>
+<li class="chapter" data-level="1.2" data-path="tema2_UA1.html"><a href="#poblaci%C3%B3n-objetivo-po-universo"><i class="fa fa-check"></i><b>1.2</b> Población Objetivo (PO) — Universo</a></li>
+<li class="chapter" data-level="1.3" data-path="tema2_UA1.html"><a href="#coberturas-estad%C3%ADsticas"><i class="fa fa-check"></i><b>1.3</b> Coberturas estadísticas</a></li>
+<li class="chapter" data-level="1.4" data-path="tema2_UA1.html"><a href="#unidades-estad%C3%ADsticas"><i class="fa fa-check"></i><b>1.4</b> Unidades estadísticas</a></li>
+<li class="chapter" data-level="1.5" data-path="tema2_UA1.html"><a href="#fuentes-de-informaci%C3%B3n"><i class="fa fa-check"></i><b>1.5</b> Fuentes de información</a></li>
+<li class="chapter" data-level="1.6" data-path="tema2_UA1.html"><a href="#enfoques-para-el-an%C3%A1lisis"><i class="fa fa-check"></i><b>1.6</b> Enfoques para el análisis</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="tema2_UA1.html"><a href="#fuentes-de-informaci%C3%B3n-enfoques-de-an%C3%A1lisis"><i class="fa fa-check"></i><b>1.6.1</b> Fuentes de información × Enfoques de análisis</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="diseño-estadístico.html"><a href="diseño-estadístico.html"><i class="fa fa-check"></i><b>1.7</b> Validez interna y externa</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="tema2_UA1.html"><a href="#fuentes-de-informaci%C3%B3n-tipos-de-validez"><i class="fa fa-check"></i><b>1.7.1</b> Fuentes de información × Tipos de validez</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="tema2_UA1.html"><a href="#sesgos-posibles-en-la-producci%C3%B3n-de-datos"><i class="fa fa-check"></i><b>1.8</b> Sesgos posibles en la producción de datos</a>
+<ul>
+<li class="chapter" data-level="1.8.1" data-path="tema2_UA1.html"><a href="#fuentes-de-informaci%C3%B3n-sesgos-m%C3%A1s-probables"><i class="fa fa-check"></i><b>1.8.1</b> Fuentes de información × Sesgos más probables</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="tema2_UA1.html"><a href="#variables-y-tipolog%C3%ADa"><i class="fa fa-check"></i><b>1.9</b> Variables y tipología</a></li>
+<li class="chapter" data-level="1.10" data-path="tema2_UA1.html"><a href="#medici%C3%B3n"><i class="fa fa-check"></i><b>1.10</b> Medición</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="tema2_UA1.html"><a href="#estad%C3%ADstica-descriptiva"><i class="fa fa-check"></i><b>2</b> Estadística descriptiva</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="tema2_UA1.html"><a href="#ordenaci%C3%B3n-de-los-datos"><i class="fa fa-check"></i><b>2.1</b> Ordenación de los datos</a></li>
+<li class="chapter" data-level="2.2" data-path="tema2_UA1.html"><a href="#estad%C3%ADsticas-para-variables-cualitativas"><i class="fa fa-check"></i><b>2.2</b> Estadísticas para variables cualitativas</a></li>
+<li class="chapter" data-level="2.3" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html"><i class="fa fa-check"></i><b>2.3</b> Medidas de resumen (Tendencia central)</a></li>
+<li class="chapter" data-level="2.4" data-path="tema2_UA1.html"><a href="#medidas-de-dispersi%C3%B3n"><i class="fa fa-check"></i><b>2.4</b> Medidas de dispersión</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Psicoestadística</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="estadística-descriptiva" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> Estadística descriptiva<a href="#estad%C3%ADstica-descriptiva" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>La <strong>estadística descriptiva</strong> se ocupa de resumir, organizar y presentar la información de un conjunto de datos, sin pretender hacer inferencias sobre una población mayor <span class="citation">(Navarro, Foxcroft, and Faulkenberry 2025)</span>.<br />
+Sus herramientas permiten transformar datos brutos en información comprensible a través de <strong>tablas, medidas numéricas y representaciones gráficas</strong> <span class="citation">(Moore, McCabe, and Craig 2013)</span>.</p>
+<div id="ordenación-de-los-datos" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Ordenación de los datos<a href="#ordenaci%C3%B3n-de-los-datos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>El primer paso en la estadística descriptiva es la <strong>organización de los datos</strong>, es decir, cómo se disponen en una estructura clara que permita analizarlos <span class="citation">(Navarro, Foxcroft, and Faulkenberry 2025)</span>.<br />
+El enfoque más común es el <strong>enfoque tabular</strong>, que dispone la información en:</p>
+<ul>
+<li><strong>Filas</strong>: cada fila corresponde a una <strong>unidad de análisis</strong> (por ejemplo, un estudiante, un paciente, una observación experimental).<br />
+</li>
+<li><strong>Columnas</strong>: cada columna corresponde a una <strong>variable</strong> (por ejemplo, edad, sexo, puntaje en una escala).</li>
+</ul>
+<p><em>Ejemplo:</em> en un cuestionario aplicado a 5 estudiantes, las filas representan a cada estudiante y las columnas las variables recolectadas (edad, sexo, nivel de ansiedad).</p>
+<hr />
+</div>
+<div id="estadísticas-para-variables-cualitativas" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Estadísticas para variables cualitativas<a href="#estad%C3%ADsticas-para-variables-cualitativas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Cuando los datos son cualitativos, los resúmenes más comunes son <span class="citation">(Agresti and Finlay 2018)</span>:</p>
+<ul>
+<li><strong>Conteos absolutos:</strong> número de casos en cada categoría.<br />
+</li>
+<li><strong>Frecuencias relativas (proporciones o porcentajes):</strong> relación de cada categoría respecto al total, expresada como proporción o en %.<br />
+</li>
+<li><strong>Tasas:</strong> razón entre un número de casos y la población expuesta en un periodo de tiempo (p. ej., tasa de deserción escolar).<br />
+</li>
+<li><strong>Razones:</strong> cociente entre dos frecuencias de distinta categoría (p. ej., razón hombre/mujer).<br />
+</li>
+<li><strong>Índices:</strong> valores compuestos que resumen múltiples indicadores en una sola medida.</li>
+</ul>
+</div>
+<div id="medidas-de-resumen-tendencia-central" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Medidas de resumen (Tendencia central)<a href="estadística-descriptiva.html#medidas-de-resumen-tendencia-central" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Las <strong>medidas de tendencia central</strong> resumen en un solo valor el “centro” o valor típico de la distribución de los datos <span class="citation">(Navarro, Foxcroft, and Faulkenberry 2025)</span>:</p>
+<ul>
+<li><strong>Media (promedio aritmético):</strong> suma de todos los valores dividida entre el número de observaciones.</li>
+</ul>
+<p><span class="math display">\[
+  \bar{x} = \frac{1}{n}\sum_{i=1}^n x_i
+\]</span></p>
+<ul>
+<li><p><strong>Mediana:</strong> valor que divide el conjunto ordenado en dos mitades de igual tamaño.<br />
+Útil cuando la distribución es asimétrica o existen valores atípicos.</p></li>
+<li><p><strong>Moda:</strong> valor más frecuente en el conjunto de datos.<br />
+Especialmente útil en variables cualitativas o discretas.</p></li>
+</ul>
+<p><em>Ejemplo:</em> En los puntajes 5, 6, 6, 7, 10:</p>
+<ul>
+<li>Media = 6.8<br />
+</li>
+<li>Mediana = 6<br />
+</li>
+<li>Moda = 6</li>
+</ul>
+</div>
+<div id="medidas-de-dispersión" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Medidas de dispersión<a href="#medidas-de-dispersi%C3%B3n" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Las <strong>medidas de dispersión</strong> indican el grado en que los datos se alejan del valor central. Son esenciales para complementar las medidas de tendencia central <span class="citation">(Navarro, Foxcroft, and Faulkenberry 2025)</span>:</p>
+<ul>
+<li><strong>Rango:</strong> diferencia entre el valor máximo y el mínimo.</li>
+</ul>
+<p><span class="math display">\[
+  R = x_{\max} - x_{\min}
+\]</span></p>
+<ul>
+<li><strong>Varianza:</strong> medida promedio de la dispersión de los datos respecto a la media.</li>
+</ul>
+<p><span class="math display">\[
+  s^2 = \frac{1}{n-1}\sum_{i=1}^n (x_i - \bar{x})^2
+\]</span></p>
+<ul>
+<li><strong>Desviación estándar:</strong> raíz cuadrada de la varianza, expresa la dispersión en las mismas unidades de la variable.</li>
+</ul>
+<p><span class="math display">\[
+  s = \sqrt{s^2}
+\]</span></p>
+<p><em>Ejemplo:</em> En los datos 5, 6, 6, 7, 10:<br />
+- Rango = 5<br />
+- Varianza = 3.2<br />
+- Desviación estándar ≈ 1.79</p>
+<blockquote>
+<p><strong>Notas:</strong></p>
+</blockquote>
+<ul>
+<li>Las medidas de resumen y dispersión deben interpretarse en conjunto.<br />
+</li>
+<li>Una media sin dispersión puede ser engañosa; la dispersión muestra la heterogeneidad de los datos.<br />
+</li>
+<li>En investigación psicológica, es clave reportar ambas dimensiones para dar una imagen completa de los resultados.</li>
+</ul>
+
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div class="csl-entry">
+Agresti, Alan, and Barbara Finlay. 2018. <em>Statistical Methods for the Social Sciences</em>. 5th ed. Boston: Pearson.
+</div>
+<div class="csl-entry">
+Gelman, Andrew, and Deborah Nolan. 2017. <em>Teaching Statistics: A Bag of Tricks</em>. 2nd ed. Oxford: Oxford University Press.
+</div>
+<div class="csl-entry">
+Groves, Robert M., Floyd J. Fowler, Mick P. Couper, James M. Lepkowski, Eleanor Singer, and Roger Tourangeau. 2009. <em>Survey Methodology</em>. 2nd ed. Hoboken, NJ: Wiley.
+</div>
+<div class="csl-entry">
+Kish, Leslie. 1995. <em>Survey Sampling</em>. New York: John Wiley &amp; Sons.
+</div>
+<div class="csl-entry">
+Montgomery, Douglas C., and George C. Runger. 2014. <em>Applied Statistics and Probability for Engineers</em>. 6th ed. Hoboken, NJ: John Wiley &amp; Sons.
+</div>
+<div class="csl-entry">
+Moore, David S., George P. McCabe, and Bruce A. Craig. 2013. <em>Introduction to the Practice of Statistics</em>. 7th ed. New York: W. H. Freeman.
+</div>
+<div class="csl-entry">
+Navarro, Danielle J., David R. Foxcroft, and Thomas J. Faulkenberry. 2025. <span>“Learning Statistics with JASP: A Tutorial for Psychology Students and Other Beginners.”</span> <a href="https://learnstatswithjasp.com">https://learnstatswithjasp.com</a>.
+</div>
+<div class="csl-entry">
+Shadish, William R., Thomas D. Cook, and Donald T. Campbell. 2002. <em>Experimental and Quasi-Experimental Designs for Generalized Causal Inference</em>. Boston: Houghton Mifflin.
+</div>
+<div class="csl-entry">
+Stevens, S. S. 1946. <span>“On the Theory of Scales of Measurement.”</span> <em>Science</em> 103 (2684): 677–80.
+</div>
+<div class="csl-entry">
+Wackerly, Dennis D., William Mendenhall, and Richard L. Scheaffer. 2008. <em>Mathematical Statistics with Applications</em>. 7th ed. Belmont, CA: Thomson Brooks/Cole.
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="diseño-estadístico.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

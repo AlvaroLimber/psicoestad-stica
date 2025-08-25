@@ -1,0 +1,81 @@
+# Estadística descriptiva
+
+La **estadística descriptiva** se ocupa de resumir, organizar y presentar la información de un conjunto de datos, sin pretender hacer inferencias sobre una población mayor [@LSJ2025].  
+Sus herramientas permiten transformar datos brutos en información comprensible a través de **tablas, medidas numéricas y representaciones gráficas** [@Moore2013].
+
+## Ordenación de los datos
+
+El primer paso en la estadística descriptiva es la **organización de los datos**, es decir, cómo se disponen en una estructura clara que permita analizarlos [@LSJ2025].  
+El enfoque más común es el **enfoque tabular**, que dispone la información en:
+
+- **Filas**: cada fila corresponde a una **unidad de análisis** (por ejemplo, un estudiante, un paciente, una observación experimental).  
+- **Columnas**: cada columna corresponde a una **variable** (por ejemplo, edad, sexo, puntaje en una escala).  
+
+*Ejemplo:* en un cuestionario aplicado a 5 estudiantes, las filas representan a cada estudiante y las columnas las variables recolectadas (edad, sexo, nivel de ansiedad).
+
+---
+
+## Estadísticas para variables cualitativas
+
+Cuando los datos son cualitativos, los resúmenes más comunes son [@Agresti2018]:
+
+- **Conteos absolutos:** número de casos en cada categoría.  
+- **Frecuencias relativas (proporciones o porcentajes):** relación de cada categoría respecto al total, expresada como proporción o en %.  
+- **Tasas:** razón entre un número de casos y la población expuesta en un periodo de tiempo (p. ej., tasa de deserción escolar).  
+- **Razones:** cociente entre dos frecuencias de distinta categoría (p. ej., razón hombre/mujer).  
+- **Índices:** valores compuestos que resumen múltiples indicadores en una sola medida.  
+
+## Medidas de resumen (Tendencia central)
+
+Las **medidas de tendencia central** resumen en un solo valor el “centro” o valor típico de la distribución de los datos [@LSJ2025]:
+
+- **Media (promedio aritmético):** suma de todos los valores dividida entre el número de observaciones.  
+
+$$
+  \bar{x} = \frac{1}{n}\sum_{i=1}^n x_i
+$$
+
+- **Mediana:** valor que divide el conjunto ordenado en dos mitades de igual tamaño.  
+  Útil cuando la distribución es asimétrica o existen valores atípicos.
+
+- **Moda:** valor más frecuente en el conjunto de datos.  
+  Especialmente útil en variables cualitativas o discretas.
+
+*Ejemplo:* En los puntajes 5, 6, 6, 7, 10:  
+
+- Media = 6.8  
+- Mediana = 6  
+- Moda = 6  
+
+## Medidas de dispersión
+
+Las **medidas de dispersión** indican el grado en que los datos se alejan del valor central. Son esenciales para complementar las medidas de tendencia central [@LSJ2025]:
+
+- **Rango:** diferencia entre el valor máximo y el mínimo.  
+
+$$
+  R = x_{\max} - x_{\min}
+$$
+
+- **Varianza:** medida promedio de la dispersión de los datos respecto a la media.  
+
+$$
+  s^2 = \frac{1}{n-1}\sum_{i=1}^n (x_i - \bar{x})^2
+$$
+
+- **Desviación estándar:** raíz cuadrada de la varianza, expresa la dispersión en las mismas unidades de la variable.  
+
+$$
+  s = \sqrt{s^2}
+$$
+
+*Ejemplo:* En los datos 5, 6, 6, 7, 10:  
+- Rango = 5  
+- Varianza = 3.2  
+- Desviación estándar ≈ 1.79  
+
+> **Notas:**  
+
+- Las medidas de resumen y dispersión deben interpretarse en conjunto.  
+- Una media sin dispersión puede ser engañosa; la dispersión muestra la heterogeneidad de los datos.  
+- En investigación psicológica, es clave reportar ambas dimensiones para dar una imagen completa de los resultados.
