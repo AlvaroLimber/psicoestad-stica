@@ -144,9 +144,9 @@ Permite identificar patrones, valores típicos y posibles atípicos [@LSJ2025].
 - **Diagrama de caja (boxplot)**: resume mediana, cuartiles y valores atípicos.  
 - **Densidad (kernel density plot)**: estimación suave de la distribución.
 
-*Ejemplo en R:*
+*Ejemplos*
 
-```{r}
+```{r, echo=FALSE}
 library(ggplot2)
 
 # Histograma
@@ -161,10 +161,12 @@ ggplot(mtcars, aes(y = mpg)) +
 ```
 
 
-Ejemplos:
+Ejemplos web:
 
 - **Seeing Theory** (Brown University): [https://seeing-theory.brown.edu/](https://seeing-theory.brown.edu/)  
   → Sección de *Distributions* e *Exploratory Data Analysis*, con histogramas, boxplots y densidades interactivos.
 
 - **Seeing Data**: [http://seeingdata.org/](http://seeingdata.org/)
   → Centrado en visualización para ciencias sociales.
+  
+## Referencias
