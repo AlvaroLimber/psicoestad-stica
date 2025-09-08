@@ -17,3 +17,9 @@ ordenación-de-los-datos
 estadísticas-para-variables-cualitativas
 medidas-de-resumen-tendencia-central
 medidas-de-dispersión
+medidas-de-forma
+asimetría-as
+curtosis-ku
+visualización-univariante
+para-variables-cualitativas
+para-variables-cuantitativas

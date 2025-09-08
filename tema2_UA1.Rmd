@@ -71,11 +71,100 @@ $$
 
 *Ejemplo:* En los datos 5, 6, 6, 7, 10:  
 - Rango = 5  
-- Varianza = 3.2  
-- Desviación estándar ≈ 1.79  
+- Varianza = 3.7
+- Desviación estándar ≈ 1.92
 
 > **Notas:**  
 
 - Las medidas de resumen y dispersión deben interpretarse en conjunto.  
 - Una media sin dispersión puede ser engañosa; la dispersión muestra la heterogeneidad de los datos.  
 - En investigación psicológica, es clave reportar ambas dimensiones para dar una imagen completa de los resultados.
+
+## Medidas de forma
+
+Además de la **tendencia central** y la **dispersión**, es importante describir la **forma de la distribución** de los datos.  
+Las medidas de forma permiten evaluar si una variable se distribuye de manera simétrica o presenta concentraciones atípicas de valores [@LSJ2025; @Moore2013].
+
+### Asimetría (AS)
+
+La **asimetría (AS)** indica el grado en que la distribución se desvía de la simetría respecto a la media:
+
+- **AS > 0 (positiva, sesgo a la derecha):** la cola de la distribución es más larga hacia valores altos.  
+  *Ejemplo:* ingresos en una población, donde unos pocos individuos concentran valores muy elevados.  
+- **AS < 0 (negativa, sesgo a la izquierda):** la cola es más larga hacia valores bajos.  
+  *Ejemplo:* edad de jubilación, donde la mayoría se concentra cerca del máximo.  
+- **AS ≈ 0:** distribución simétrica, como la normal.
+
+**Fórmula (coeficiente de asimetría de Fisher):**
+
+$$
+AS = \frac{\frac{1}{n}\sum_{i=1}^n (x_i - \bar{x})^3}{s^3}
+$$
+
+donde $s$ es la desviación estándar.
+
+### Curtosis (KU)
+
+La **curtosis (KU)** mide el grado de concentración de los valores en torno a la media (apuntamiento de la distribución):
+
+- **KU > 0 (leptocúrtica):** mayor concentración en el centro y colas más pesadas que la normal.  
+- **KU = 0 (mesocúrtica):** distribución similar a la normal.  
+- **KU < 0 (platicúrtica):** menos concentración en el centro, distribución más achatada.
+
+**Fórmula (exceso de curtosis de Fisher):**
+
+$$
+KU = \frac{\frac{1}{n}\sum_{i=1}^n (x_i - \bar{x})^4}{s^4} - 3
+$$
+
+donde $KU = 0$ corresponde a la normal.
+
+> Notas didácticas
+
+- **AS** y **KU** complementan las medidas de tendencia central y dispersión, aportando información sobre la forma.  
+- En investigación psicológica, ayudan a verificar supuestos de normalidad antes de aplicar pruebas paramétricas.  
+- Valores extremos de **AS** o **KU** pueden afectar fuertemente las inferencias estadísticas. 
+- En la práctica, es más informativo mostrar un histograma o un diagrama de caja que reportar
+
+*Ejemplo aplicado:*  
+En un test de ansiedad aplicado a 200 estudiantes, se obtiene **AS = 1.2** (asimetría positiva moderada) y **KU = 1.5** (leptocúrtica). Esto indica que la mayoría de los estudiantes tienen niveles bajos a moderados, pero existe un pequeño grupo con niveles muy altos que genera colas largas y concentración en el centro.
+
+## Visualización univariante
+
+La visualización univariante muestra la distribución de una sola variable.  
+Permite identificar patrones, valores típicos y posibles atípicos [@LSJ2025].
+
+### Para variables cualitativas
+- **Gráfico de barras**: compara frecuencias absolutas o relativas de categorías.
+- **Gráfico de sectores (pie chart)**: representa proporciones como partes de un todo (menos recomendable en contextos académicos, pero popular en divulgación).
+
+### Para variables cuantitativas
+- **Histograma**: muestra la distribución dividiendo el rango en intervalos.  
+- **Polígono de frecuencias**: línea que conecta las frecuencias de un histograma.  
+- **Diagrama de caja (boxplot)**: resume mediana, cuartiles y valores atípicos.  
+- **Densidad (kernel density plot)**: estimación suave de la distribución.
+
+*Ejemplo en R:*
+
+```{r}
+library(ggplot2)
+
+# Histograma
+ggplot(mtcars, aes(x = mpg)) +
+  geom_histogram(binwidth = 2, fill = "skyblue", color = "black") +
+  labs(x = "Millas por galón", y = "Frecuencia")
+
+# Diagrama de caja
+ggplot(mtcars, aes(y = mpg)) +
+  geom_boxplot(fill = "lightgreen") +
+  labs(y = "Millas por galón")
+```
+
+
+Ejemplos:
+
+- **Seeing Theory** (Brown University): [https://seeing-theory.brown.edu/](https://seeing-theory.brown.edu/)  
+  → Sección de *Distributions* e *Exploratory Data Analysis*, con histogramas, boxplots y densidades interactivos.
+
+- **Seeing Data**: [http://seeingdata.org/](http://seeingdata.org/)
+  → Centrado en visualización para ciencias sociales.
