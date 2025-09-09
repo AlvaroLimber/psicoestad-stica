@@ -69,10 +69,18 @@ $$
   s = \sqrt{s^2}
 $$
 
+- **Coeficiente de variación:** Cociente entre la desviación estándar y la media, expresa la dispersión de los datos en términos relativos, mientras el valor se más cercano a cero existe menos dispoersión. 
+
+$$cv=\frac{s}{\bar{x}}$$
+
+$$cv\%=\frac{s}{\bar{x}}*100$$
+
 *Ejemplo:* En los datos 5, 6, 6, 7, 10:  
 - Rango = 5  
 - Varianza = 3.7
 - Desviación estándar ≈ 1.92
+- Coeficiente de variación = 0.283
+- $cv\%=28.3$
 
 > **Notas:**  
 
