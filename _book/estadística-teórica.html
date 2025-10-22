@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Estadística Teórica | Psicoestadística</title>
+  <meta name="description" content="Este libro esta destinado a la materia de Psicoestadística de la carrera de Psicología de la Universidad Católica Boliviana, sede La Paz." />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Estadística Teórica | Psicoestadística" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Este libro esta destinado a la materia de Psicoestadística de la carrera de Psicología de la Universidad Católica Boliviana, sede La Paz." />
+  <meta name="github-repo" content="alvarolimber/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Estadística Teórica | Psicoestadística" />
+  
+  <meta name="twitter:description" content="Este libro esta destinado a la materia de Psicoestadística de la carrera de Psicología de la Universidad Católica Boliviana, sede La Paz." />
+  
+
+<meta name="author" content="MSc. Alvaro Chirino Gutierrez" />
+
+
+<meta name="date" content="2025-10-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="estadística-descriptiva.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#audiencia"><i class="fa fa-check"></i>Audiencia</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#estructura-del-libro"><i class="fa fa-check"></i>Estructura del libro</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="tema3.html"><a href="#dise%C3%B1o-estad%C3%ADstico"><i class="fa fa-check"></i><b>1</b> Diseño estadístico</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="tema3.html"><a href="#qu%C3%A9-es-la-estad%C3%ADstica"><i class="fa fa-check"></i><b>1.1</b> ¿Qué es la estadística?</a></li>
+<li class="chapter" data-level="1.2" data-path="tema3.html"><a href="#poblaci%C3%B3n-objetivo-po-universo"><i class="fa fa-check"></i><b>1.2</b> Población Objetivo (PO) — Universo</a></li>
+<li class="chapter" data-level="1.3" data-path="tema3.html"><a href="#coberturas-estad%C3%ADsticas"><i class="fa fa-check"></i><b>1.3</b> Coberturas estadísticas</a></li>
+<li class="chapter" data-level="1.4" data-path="tema3.html"><a href="#unidades-estad%C3%ADsticas"><i class="fa fa-check"></i><b>1.4</b> Unidades estadísticas</a></li>
+<li class="chapter" data-level="1.5" data-path="tema3.html"><a href="#fuentes-de-informaci%C3%B3n"><i class="fa fa-check"></i><b>1.5</b> Fuentes de información</a></li>
+<li class="chapter" data-level="1.6" data-path="tema3.html"><a href="#enfoques-para-el-an%C3%A1lisis"><i class="fa fa-check"></i><b>1.6</b> Enfoques para el análisis</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="tema3.html"><a href="#fuentes-de-informaci%C3%B3n-enfoques-de-an%C3%A1lisis"><i class="fa fa-check"></i><b>1.6.1</b> Fuentes de información × Enfoques de análisis</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="diseño-estadístico.html"><a href="diseño-estadístico.html"><i class="fa fa-check"></i><b>1.7</b> Validez interna y externa</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="tema3.html"><a href="#fuentes-de-informaci%C3%B3n-tipos-de-validez"><i class="fa fa-check"></i><b>1.7.1</b> Fuentes de información × Tipos de validez</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="tema3.html"><a href="#sesgos-posibles-en-la-producci%C3%B3n-de-datos"><i class="fa fa-check"></i><b>1.8</b> Sesgos posibles en la producción de datos</a>
+<ul>
+<li class="chapter" data-level="1.8.1" data-path="tema3.html"><a href="#fuentes-de-informaci%C3%B3n-sesgos-m%C3%A1s-probables"><i class="fa fa-check"></i><b>1.8.1</b> Fuentes de información × Sesgos más probables</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="tema3.html"><a href="#variables-y-tipolog%C3%ADa"><i class="fa fa-check"></i><b>1.9</b> Variables y tipología</a></li>
+<li class="chapter" data-level="1.10" data-path="tema3.html"><a href="#medici%C3%B3n"><i class="fa fa-check"></i><b>1.10</b> Medición</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="tema3.html"><a href="#estad%C3%ADstica-descriptiva"><i class="fa fa-check"></i><b>2</b> Estadística descriptiva</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="tema3.html"><a href="#ordenaci%C3%B3n-de-los-datos"><i class="fa fa-check"></i><b>2.1</b> Ordenación de los datos</a></li>
+<li class="chapter" data-level="2.2" data-path="tema3.html"><a href="#estad%C3%ADsticas-para-variables-cualitativas"><i class="fa fa-check"></i><b>2.2</b> Estadísticas para variables cualitativas</a></li>
+<li class="chapter" data-level="2.3" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html"><i class="fa fa-check"></i><b>2.3</b> Medidas de resumen (Tendencia central)</a></li>
+<li class="chapter" data-level="2.4" data-path="tema3.html"><a href="#medidas-de-dispersi%C3%B3n"><i class="fa fa-check"></i><b>2.4</b> Medidas de dispersión</a></li>
+<li class="chapter" data-level="2.5" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#medidas-de-forma"><i class="fa fa-check"></i><b>2.5</b> Medidas de forma</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="tema3.html"><a href="#asimetr%C3%ADa-as"><i class="fa fa-check"></i><b>2.5.1</b> Asimetría (AS)</a></li>
+<li class="chapter" data-level="2.5.2" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#curtosis-ku"><i class="fa fa-check"></i><b>2.5.2</b> Curtosis (KU)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="tema3.html"><a href="#visualizaci%C3%B3n-univariante"><i class="fa fa-check"></i><b>2.6</b> Visualización univariante</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#para-variables-cualitativas"><i class="fa fa-check"></i><b>2.6.1</b> Para variables cualitativas</a></li>
+<li class="chapter" data-level="2.6.2" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#para-variables-cuantitativas"><i class="fa fa-check"></i><b>2.6.2</b> Para variables cuantitativas</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#referencias"><i class="fa fa-check"></i><b>2.7</b> Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tema3.html"><a href="#estad%C3%ADstica-te%C3%B3rica"><i class="fa fa-check"></i><b>3</b> Estadística Teórica</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="estadística-teórica.html"><a href="estadística-teórica.html"><i class="fa fa-check"></i><b>3.1</b> Fundamentos de Probabilidad y Axiomas</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="estadística-teórica.html"><a href="estadística-teórica.html#experimento-aleatorio-y-espacio-muestral"><i class="fa fa-check"></i><b>3.1.1</b> Experimento Aleatorio y Espacio Muestral</a></li>
+<li class="chapter" data-level="3.1.2" data-path="tema3.html"><a href="#axiomas-de-la-probabilidad-kolmog%C3%B3rov"><i class="fa fa-check"></i><b>3.1.2</b> Axiomas de la Probabilidad (Kolmogórov)</a></li>
+<li class="chapter" data-level="3.1.3" data-path="estadística-teórica.html"><a href="estadística-teórica.html#enfoques-conceptuales-de-la-probabilidad"><i class="fa fa-check"></i><b>3.1.3</b> Enfoques Conceptuales de la Probabilidad</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="estadística-teórica.html"><a href="estadística-teórica.html#variable-aleatoria-y-distribuciones"><i class="fa fa-check"></i><b>3.2</b> Variable Aleatoria y Distribuciones</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="estadística-teórica.html"><a href="estadística-teórica.html#variable-aleatoria-v.a.-x"><i class="fa fa-check"></i><b>3.2.1</b> Variable Aleatoria (v.a. = X)</a></li>
+<li class="chapter" data-level="3.2.2" data-path="estadística-teórica.html"><a href="estadística-teórica.html#distribuciones-discretas"><i class="fa fa-check"></i><b>3.2.2</b> Distribuciones Discretas</a></li>
+<li class="chapter" data-level="3.2.3" data-path="tema3.html"><a href="#distribuci%C3%B3n-normal-campana-de-gauss"><i class="fa fa-check"></i><b>3.2.3</b> Distribución Normal (Campana de Gauss)</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="tema3.html"><a href="#muestreo-teoremas-fundamentales-y-estimaci%C3%B3n"><i class="fa fa-check"></i><b>3.3</b> Muestreo, Teoremas Fundamentales y Estimación</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="tema3.html"><a href="#muestreo-e-inferencia-estad%C3%ADstica"><i class="fa fa-check"></i><b>3.3.1</b> Muestreo e Inferencia Estadística</a></li>
+<li class="chapter" data-level="3.3.2" data-path="estadística-teórica.html"><a href="estadística-teórica.html#distribuciones-muestrales"><i class="fa fa-check"></i><b>3.3.2</b> Distribuciones Muestrales</a></li>
+<li class="chapter" data-level="3.3.3" data-path="tema3.html"><a href="#ley-de-los-grandes-n%C3%BAmeros-lgn"><i class="fa fa-check"></i><b>3.3.3</b> Ley de los Grandes Números (LGN)</a></li>
+<li class="chapter" data-level="3.3.4" data-path="tema3.html"><a href="#teorema-del-l%C3%ADmite-central-tlc"><i class="fa fa-check"></i><b>3.3.4</b> Teorema del Límite Central (TLC)</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="tema3.html"><a href="#estimaci%C3%B3n-de-par%C3%A1metros"><i class="fa fa-check"></i><b>3.4</b> Estimación de Parámetros</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="tema3.html"><a href="#estimaci%C3%B3n-puntual-para-la-media"><i class="fa fa-check"></i><b>3.4.1</b> Estimación Puntual para la Media</a></li>
+<li class="chapter" data-level="3.4.2" data-path="tema3.html"><a href="#estimaci%C3%B3n-por-intervalo-de-confianza-ic-para-la-media"><i class="fa fa-check"></i><b>3.4.2</b> Estimación por Intervalo de Confianza (IC) para la Media</a></li>
+<li class="chapter" data-level="3.4.3" data-path="tema3.html"><a href="#pruebas-de-hip%C3%B3tesis"><i class="fa fa-check"></i><b>3.4.3</b> Pruebas de Hipótesis</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="tema3.html"><a href="#tama%C3%B1o-de-muestra"><i class="fa fa-check"></i><b>3.5</b> Tamaño de Muestra</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="tema3.html"><a href="#relevancia-de-la-aleatoriedad-y-el-equilibrio-log%C3%ADstico"><i class="fa fa-check"></i><b>3.5.1</b> Relevancia de la Aleatoriedad y el Equilibrio Logístico</a></li>
+<li class="chapter" data-level="3.5.2" data-path="tema3.html"><a href="#c%C3%A1lculo-para-fines-de-inferencia-descriptiva-margen-de-error"><i class="fa fa-check"></i><b>3.5.2</b> Cálculo para Fines de Inferencia Descriptiva (Margen de Error)</a></li>
+<li class="chapter" data-level="3.5.3" data-path="tema3.html"><a href="#c%C3%A1lculo-para-fines-de-inferencia-exploratoria-potencia"><i class="fa fa-check"></i><b>3.5.3</b> Cálculo para Fines de Inferencia Exploratoria (Potencia)</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="estadística-teórica.html"><a href="estadística-teórica.html#referencias-1"><i class="fa fa-check"></i><b>3.6</b> Referencias</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Psicoestadística</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="estadística-teórica" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> Estadística Teórica<a href="#estad%C3%ADstica-te%C3%B3rica" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>La <strong>estadística teórica</strong> proporciona los fundamentos matemáticos que sustentan la inferencia estadística. A través de la <strong>probabilidad</strong>, los <strong>modelos de distribución</strong> y los <strong>teoremas fundamentales</strong>, permite cuantificar la incertidumbre y estimar parámetros poblacionales a partir de muestras. En su aspecto teórico, permite establecer y entender la relación entre la <strong>Población Objetivo (P.O.)</strong> y la <strong>muestra</strong> (<span class="citation">Navarro, Foxcroft, and Faulkenberry (2025)</span>; <span class="citation">Moore, McCabe, and Craig (2013)</span>). Habla sobre la probabilidad y la variable aleatoria, caracterizada por el azar, e implica las distribuciones muestrales, donde se conecta con la práctica y la realidad.</p>
+<div id="fundamentos-de-probabilidad-y-axiomas" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Fundamentos de Probabilidad y Axiomas<a href="estadística-teórica.html#fundamentos-de-probabilidad-y-axiomas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>La <strong>probabilidad</strong> es una <strong>medida de incertidumbre</strong> y constituye la base teórica de la inferencia estadística (<span class="citation">Feller (1968)</span>).</p>
+<div id="experimento-aleatorio-y-espacio-muestral" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Experimento Aleatorio y Espacio Muestral<a href="estadística-teórica.html#experimento-aleatorio-y-espacio-muestral" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Un <strong>experimento aleatorio</strong> es un proceso del cual <strong>NO se conoce el resultado</strong> antes de su realización. Los conceptos de aleatorio e incertidumbre están relacionados.</p>
+<p><em>Ejemplo en Psicología:</em> Observar si un paciente abandona la terapia (<span class="math inline">\(X=1\)</span>) o la continúa (<span class="math inline">\(X=0\)</span>).</p>
+<p>El <strong>espacio muestral (<span class="math inline">\(\Omega\)</span>)</strong> es el conjunto de <strong>TODOS</strong> los resultados posibles que puede arrojar un experimento aleatorio.</p>
+<ul>
+<li><strong>Espacio Muestral Discreto:</strong> Si <span class="math inline">\(\Omega\)</span> es finito o contablemente infinito.
+<ul>
+<li><em>Ejemplo:</em> Medir la <strong>calificación</strong> obtenida en un examen (valores posibles: 0, 1, 2, …, 10). <span class="math inline">\(\Omega = \{0, 1, 2, \dots, 10\}\)</span>.</li>
+</ul></li>
+<li><strong>Espacio Muestral Continuo:</strong> Si <span class="math inline">\(\Omega\)</span> incluye todos los valores dentro de un intervalo (no contable).
+<ul>
+<li><em>Ejemplo 3:</em> Medir el <strong>tiempo de reacción</strong> (en segundos) de una persona a un estímulo visual. <span class="math inline">\(\Omega = [0, \infty)\)</span>.</li>
+</ul></li>
+</ul>
+<p>Un <strong>evento (<span class="math inline">\(A\)</span>)</strong> es cualquier subconjunto del espacio muestral (<span class="math inline">\(\Omega\)</span>). Es la ocurrencia o no ocurrencia de un resultado específico o grupo de resultados. Cuando un evento es imposible, su probabilidad es <strong>igual a 0</strong>.</p>
+<ul>
+<li><em>Ejemplo de Evento (basado en Ejemplo 1, calificación):</em>
+<ul>
+<li>Evento <span class="math inline">\(A\)</span>: Aprobar el examen (obtener una calificación mayor a 5). <span class="math inline">\(A = \{6, 7, 8, 9, 10\}\)</span>.</li>
+<li>Evento <span class="math inline">\(B\)</span>: Obtener una calificación perfecta. <span class="math inline">\(B = \{10\}\)</span>.</li>
+</ul></li>
+</ul>
+</div>
+<div id="axiomas-de-la-probabilidad-kolmogórov" class="section level3 hasAnchor" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Axiomas de la Probabilidad (Kolmogórov)<a href="#axiomas-de-la-probabilidad-kolmog%C3%B3rov" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Formalmente, un espacio probabilístico <span class="math inline">\((\Omega, \mathcal{A}, P)\)</span> se define con base en los axiomas:</p>
+<ol style="list-style-type: decimal">
+<li><strong>No negatividad</strong>: La probabilidad de cualquier evento <span class="math inline">\(A\)</span> debe estar <strong>entre 0 y 1</strong>. <span class="math inline">\(P(A) \ge 0\)</span>.</li>
+<li><strong>Unidad</strong>: La probabilidad del espacio muestral siempre es <strong>igual a 1</strong>. <span class="math inline">\(P(\Omega) = 1\)</span>.</li>
+<li><strong>Aditividad</strong>: Para una secuencia de eventos mutuamente excluyentes (<span class="math inline">\(A_1, A_2, ...\)</span>), la probabilidad de su unión es la suma de sus probabilidades:
+<span class="math display">\[
+P\left(\bigcup_i A_i\right) = \sum_i P(A_i)
+\]</span></li>
+</ol>
+</div>
+<div id="enfoques-conceptuales-de-la-probabilidad" class="section level3 hasAnchor" number="3.1.3">
+<h3><span class="header-section-number">3.1.3</span> Enfoques Conceptuales de la Probabilidad<a href="estadística-teórica.html#enfoques-conceptuales-de-la-probabilidad" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Existen tres enfoques principales para interpretar la probabilidad, cada uno con implicaciones distintas en la aplicación de la estadística (<span class="citation">Navarro, Foxcroft, and Faulkenberry (2025)</span>; <span class="citation">Moore, McCabe, and Craig (2013)</span>):</p>
+<div id="probabilidad-teórica-clásica" class="section level4 hasAnchor" number="3.1.3.1">
+<h4><span class="header-section-number">3.1.3.1</span> Probabilidad Teórica (Clásica)<a href="#probabilidad-te%C3%B3rica-cl%C3%A1sica" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Deriva del razonamiento lógico o combinatorio y asume que todos los resultados posibles son <strong>igualmente probables (equiprobables)</strong>.</p>
+<p><span class="math display">\[
+P(A) = \frac{\text{número de casos favorables}}{\text{número total de casos posibles}}
+\]</span></p>
+<ul>
+<li><strong>Desarrollo:</strong> Este enfoque es útil principalmente para experimentos ideales, juegos de azar o situaciones muy controladas donde la simetría de los resultados es evidente. Es la definición más limitada en las ciencias empíricas como la psicología, pues rara vez se asume equiprobabilidad en los fenómenos de la vida real.</li>
+<li><em>Ejemplo en Psicología:</em> Asumir la probabilidad de que un sujeto elija la Opción A o la Opción B en un test simple sin sesgos previos es <span class="math inline">\(P(A) = 1/2\)</span>.</li>
+</ul>
+</div>
+<div id="probabilidad-frecuentista-empírica" class="section level4 hasAnchor" number="3.1.3.2">
+<h4><span class="header-section-number">3.1.3.2</span> Probabilidad Frecuentista (Empírica)<a href="#probabilidad-frecuentista-emp%C3%ADrica" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Se define como el <strong>límite de la frecuencia relativa</strong> con que ocurre un evento en un número grande de repeticiones independientes del experimento.</p>
+<p><span class="math display">\[
+P(A) = \lim_{n \to \infty} \frac{f_A}{n}
+\]</span></p>
+<ul>
+<li><strong>Desarrollo:</strong> Es el enfoque más relevante y utilizado en la inferencia estadística clásica y en la investigación psicológica. La probabilidad se estima a partir de la <strong>observación empírica y la experiencia acumulada</strong>. La precisión de la estimación mejora a medida que aumenta el número de observaciones (<span class="math inline">\(n \to \infty\)</span>), tal como lo establece la <strong>Ley de los Grandes Números</strong>.</li>
+<li><em>Ejemplo en Psicología:</em> Si se observa que de 1,000 pacientes con un trastorno específico, 650 responden positivamente a un tipo de terapia, la probabilidad frecuentista de respuesta positiva es <span class="math inline">\(P(\text{Respuesta Positiva}) \approx 650/1000 = 0.65\)</span>.</li>
+</ul>
+</div>
+<div id="probabilidad-bayesiana-subjetiva-o-condicional" class="section level4 hasAnchor" number="3.1.3.3">
+<h4><span class="header-section-number">3.1.3.3</span> Probabilidad Bayesiana (Subjetiva o Condicional)<a href="estadística-teórica.html#probabilidad-bayesiana-subjetiva-o-condicional" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Interpreta la probabilidad como el <strong>grado de creencia racional</strong> sobre la ocurrencia de un evento, dado un conjunto de evidencias.
+* <strong>Desarrollo:</strong> Parte de una <strong>probabilidad inicial</strong> (<em>a priori</em>) que se ajusta y se actualiza mediante nueva evidencia (datos) para generar una <strong>Probabilidad Posterior</strong> más precisa. Se formaliza mediante el <strong>Teorema de Bayes</strong>.</p>
+<p><span class="math display">\[
+P(A|B) = \frac{P(B|A)P(A)}{P(B)}
+\]</span></p>
+</div>
+</div>
+</div>
+<div id="variable-aleatoria-y-distribuciones" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Variable Aleatoria y Distribuciones<a href="estadística-teórica.html#variable-aleatoria-y-distribuciones" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="variable-aleatoria-v.a.-x" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Variable Aleatoria (v.a. = X)<a href="estadística-teórica.html#variable-aleatoria-v.a.-x" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Una <strong>variable aleatoria (X)</strong> es una función que asigna a los eventos posibles una medida cuantificable. Es el soporte cuantitativo para las probabilidades.</p>
+<p>La distinción entre <span class="math inline">\(X\)</span> (mayúscula) y <span class="math inline">\(x\)</span> (minúscula) es crucial:
+* <strong><span class="math inline">\(X\)</span> (Mayúscula)</strong>: Representa la <strong>variable aleatoria</strong> en sí, es decir, la <em>regla</em> o <em>función</em> que describe el conjunto de resultados posibles. Es la variable <strong>antes</strong> de que se realice el experimento.
+* <strong><span class="math inline">\(x\)</span> (Minúscula)</strong>: Representa una <strong>realización</strong> o un <strong>valor específico</strong> que la variable aleatoria <span class="math inline">\(X\)</span> puede tomar después de que el experimento ha ocurrido. Es un resultado concreto del recorrido.</p>
+<p><em>Ejemplo en Psicología:</em>
+* <strong>Variable Aleatoria (<span class="math inline">\(X\)</span>)</strong>: El <strong>Puntaje de Ansiedad</strong> que obtendrá un sujeto en el próximo test.
+* <strong>Realización (<span class="math inline">\(x\)</span>)</strong>: El puntaje de 42 que <em>obtuvo</em> el sujeto al completar el test.</p>
+<p>La probabilidad se define como la posibilidad de que la variable aleatoria <span class="math inline">\(X\)</span> tome un valor específico <span class="math inline">\(x\)</span>: <span class="math inline">\(P(X = x)\)</span>.</p>
+</div>
+<div id="distribuciones-discretas" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Distribuciones Discretas<a href="estadística-teórica.html#distribuciones-discretas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Las distribuciones discretas describen variables aleatorias cuyo recorrido es finito o contable (valores enteros, no continuos).</p>
+<div id="experimento-y-variable-aleatoria-bernoulli" class="section level4 hasAnchor" number="3.2.2.1">
+<h4><span class="header-section-number">3.2.2.1</span> Experimento y Variable Aleatoria Bernoulli<a href="estadística-teórica.html#experimento-y-variable-aleatoria-bernoulli" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Un <strong>Experimento Bernoulli</strong> es el modelo de probabilidad más simple. Solo tiene <strong>dos resultados posibles</strong> mutuamente excluyentes: <strong>éxito</strong> (<span class="math inline">\(X=1\)</span>) o <strong>fracaso</strong> (<span class="math inline">\(X=0\)</span>). La probabilidad de éxito (<span class="math inline">\(p\)</span>) se mantiene constante en cada ensayo.</p>
+<ul>
+<li><strong>Fórmula (Función de Masa de Probabilidad):</strong>
+<span class="math display">\[
+  P(X = x) = p^x (1-p)^{1-x} \quad \text{para } x \in \{0, 1\}
+  \]</span></li>
+<li><em>Ejemplo en Psicología:</em> Determinar si un paciente <strong>abandona la terapia</strong> (éxito, <span class="math inline">\(X=1\)</span>) o <strong>continúa</strong> (fracaso, <span class="math inline">\(X=0\)</span>). Si la probabilidad histórica de abandono es <span class="math inline">\(p=0.3\)</span>, entonces <span class="math inline">\(P(X=1) = 0.3\)</span> y <span class="math inline">\(P(X=0) = 0.7\)</span>.</li>
+</ul>
+</div>
+<div id="distribución-y-experimento-binomial" class="section level4 hasAnchor" number="3.2.2.2">
+<h4><span class="header-section-number">3.2.2.2</span> Distribución y Experimento Binomial<a href="#distribuci%C3%B3n-y-experimento-binomial" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Un <strong>Experimento Binomial</strong> es una <strong>serie de <span class="math inline">\(n\)</span> repeticiones independientes del experimento Bernoulli</strong>. La <strong>Distribución Binomial</strong> cuenta cuántos <strong>éxitos</strong> (<span class="math inline">\(x\)</span>) ocurren en ese número fijo de intentos (<span class="math inline">\(n\)</span>) con una probabilidad de éxito <span class="math inline">\(p\)</span> constante.</p>
+<ul>
+<li><p><strong>Fórmula (Función de Masa de Probabilidad):</strong>
+<span class="math display">\[
+  P(X = x) = \binom{n}{x} p^x (1-p)^{n-x} \quad \text{para } x \in \{0, 1, \dots, n\}
+  \]</span>
+donde <span class="math inline">\(\binom{n}{x} = \frac{n!}{x!(n-x)!}\)</span> es el número de formas de obtener <span class="math inline">\(k\)</span> éxitos en <span class="math inline">\(n\)</span> intentos.</p></li>
+<li><p><strong>Valor Esperado (Media) de la Binomial</strong>
+El <strong>Valor Esperado</strong> o <strong>Esperanza Matemática</strong> (<span class="math inline">\(E[X]\)</span>) de una variable aleatoria es el promedio teórico a largo plazo si el experimento se repite un número infinito de veces. Para la distribución Binomial, representa el número esperado de éxitos.
+<span class="math display">\[
+  E[X] = n \cdot p
+  \]</span></p></li>
+<li><p><em>Ejemplo Completo en Psicología:</em>
+Una investigadora aplica un test de <strong>razonamiento moral</strong> con <span class="math inline">\(n=20\)</span> ítems (preguntas de sí/no). Asume que la probabilidad de responder correctamente al azar es <span class="math inline">\(p=0.5\)</span>.</p>
+<ol style="list-style-type: decimal">
+<li><strong>Valor Esperado:</strong> El número esperado de respuestas correctas (por azar) es:
+<span class="math display">\[
+E[X] = n \cdot p = 20 \cdot 0.5 = 10
+\]</span>
+Se espera que, en promedio, una persona que responda al azar acierte 10 de las 20 preguntas.</li>
+<li><strong>Cálculo de Probabilidad:</strong> Si la investigadora quiere saber la probabilidad de que un sujeto responda <strong>exactamente 15</strong> preguntas correctamente al azar (<span class="math inline">\(x=15\)</span>):
+<span class="math display">\[
+P(X = 15) = \binom{20}{15} (0.5)^{15} (1-0.5)^{20-15}
+\]</span>
+<span class="math display">\[
+P(X = 15) = 15504 \cdot (0.0000305) \cdot (0.03125) \approx 0.0148
+\]</span>
+La probabilidad de obtener exactamente 15 aciertos al azar es muy baja (aproximadamente 1.48%). Esto permite a la investigadora inferir que un puntaje superior a 10 o 11 probablemente no se deba solo al azar.</li>
+</ol></li>
+</ul>
+</div>
+</div>
+<div id="distribución-normal-campana-de-gauss" class="section level3 hasAnchor" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> Distribución Normal (Campana de Gauss)<a href="#distribuci%C3%B3n-normal-campana-de-gauss" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>La <strong>Distribución Normal</strong> (o <strong>Campana de Gauss</strong>) es la distribución de probabilidad continua más importante en estadística inferencial. Describe variables que tienden a concentrarse simétricamente alrededor de un valor central, disminuyendo su frecuencia hacia los extremos.</p>
+<ul>
+<li><p><strong>Fórmula (Función de Densidad de Probabilidad):</strong>
+<span class="math display">\[
+  f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
+  \]</span>
+Esta fórmula establece que la forma de la campana está completamente determinada por dos parámetros: la <strong>media (<span class="math inline">\(\mu\)</span>)</strong> (que define la posición central) y la <strong>desviación estándar (<span class="math inline">\(\sigma\)</span>)</strong> (que define la dispersión o altura).</p></li>
+<li><p><strong>Propiedades Clave:</strong></p>
+<ol style="list-style-type: decimal">
+<li><strong>Forma de Campana:</strong> Es perfectamente simétrica respecto a la media. En el punto central, la media, la mediana y la moda coinciden (<span class="math inline">\(\mu\)</span>).</li>
+<li><strong>Determinada por <span class="math inline">\(\mu\)</span> y <span class="math inline">\(\sigma\)</span></strong>: Cambios en <span class="math inline">\(\mu\)</span> desplazan la curva horizontalmente, mientras que cambios en <span class="math inline">\(\sigma\)</span> la hacen más ancha (mayor dispersión) o más estrecha (menor dispersión).</li>
+<li><strong>Regla Empírica (68-95-99.7):</strong> Un porcentaje predecible de los datos cae dentro de ciertos rangos respecto a la media:
+<ul>
+<li>Aproximadamente el <strong>68%</strong> de los datos se encuentra a <span class="math inline">\(\pm 1\)</span> desviación estándar (<span class="math inline">\(\mu \pm 1\sigma\)</span>).</li>
+<li>Aproximadamente el <strong>95%</strong> de los datos se encuentra a <span class="math inline">\(\pm 2\)</span> desviaciones estándar (<span class="math inline">\(\mu \pm 2\sigma\)</span>).</li>
+<li>Aproximadamente el <strong>99.7%</strong> de los datos se encuentra a <span class="math inline">\(\pm 3\)</span> desviaciones estándar (<span class="math inline">\(\mu \pm 3\sigma\)</span>).</li>
+</ul></li>
+</ol></li>
+</ul>
+<p><em>Ejemplo en Psicología:</em> Las puntuaciones del <strong>Coeficiente Intelectual (CI)</strong> en grandes poblaciones siguen aproximadamente una distribución normal con <span class="math inline">\(\mu=100\)</span> y <span class="math inline">\(\sigma=15\)</span>. Esto implica que, basándose en la regla empírica, el 95% de la población tiene un CI entre 70 y 130 (100 <span class="math inline">\(\pm\)</span> <span class="math inline">\(2 \times 15\)</span>).</p>
+</div>
+</div>
+<div id="muestreo-teoremas-fundamentales-y-estimación" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Muestreo, Teoremas Fundamentales y Estimación<a href="#muestreo-teoremas-fundamentales-y-estimaci%C3%B3n" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="muestreo-e-inferencia-estadística" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Muestreo e Inferencia Estadística<a href="#muestreo-e-inferencia-estad%C3%ADstica" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>El <strong>muestreo</strong> es la forma de extraer una muestra. Es fundamental porque el objetivo principal de la estadística es la <strong>Inferencia Estadística</strong>: el proceso de utilizar información limitada de una muestra para sacar conclusiones o hacer generalizaciones sobre una población más grande.</p>
+<div id="concepto-de-muestra-y-población" class="section level4 hasAnchor" number="3.3.1.1">
+<h4><span class="header-section-number">3.3.1.1</span> Concepto de Muestra y Población<a href="#concepto-de-muestra-y-poblaci%C3%B3n" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li><strong>Población Objetivo (P.O.)</strong>: Es el conjunto completo de elementos, individuos o eventos sobre los cuales el investigador desea obtener información y generalizar sus conclusiones.</li>
+<li><strong>Muestra</strong>: Es un <strong>subconjunto (o “pedacito”)</strong> de la Población Objetivo que realmente se observa y mide en el estudio. La muestra se usa como sustituto de la P.O. por razones prácticas (costo, tiempo, imposibilidad de medir a todos).</li>
+</ul>
+</div>
+<div id="el-rol-del-muestreo-aleatorio" class="section level4 hasAnchor" number="3.3.1.2">
+<h4><span class="header-section-number">3.3.1.2</span> El Rol del Muestreo Aleatorio<a href="estadística-teórica.html#el-rol-del-muestreo-aleatorio" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Para que el proceso de inferencia sea válido, el muestreo debe ser <strong>aleatorio</strong>.
+* <strong>Muestreo Aleatorio</strong>: Incorpora el <strong>azar</strong> en la selección, asegurando que cada unidad de la P.O. tenga una probabilidad conocida (y usualmente igual) de ser incluida en la muestra.
+* <strong>Importancia</strong>: Un muestreo aleatorio minimiza el <strong>sesgo</strong> y es la única condición bajo la cual los principios de la probabilidad (como el Teorema del Límite Central) pueden aplicarse, permitiendo que la muestra sea <strong>representativa</strong> de la población.
+* <strong>Muestreo No Aleatorio</strong>: Se basa en la conveniencia, accesibilidad o juicio del investigador, lo que <strong>limita o anula</strong> la capacidad de generalizar estadísticamente a la P.O.</p>
+</div>
+<div id="conceptos-de-estimación" class="section level4 hasAnchor" number="3.3.1.3">
+<h4><span class="header-section-number">3.3.1.3</span> Conceptos de Estimación<a href="#conceptos-de-estimaci%C3%B3n" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>La <strong>Estimación</strong> es la actividad central de la inferencia, donde el investigador busca aproximar un valor desconocido de la población (el <strong>Parámetro</strong>) usando el dato conocido de la muestra (el <strong>Estimador</strong>).</p>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Concepto</th>
+<th align="left">Definición</th>
+<th align="left">Conexión con la Inferencia</th>
+<th align="left">Símbolo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Parámetro</strong></td>
+<td align="left">Una medida descriptiva calculada sobre la <strong>P.O.</strong>. Fijo, único, pero generalmente <strong>desconocido</strong>.</td>
+<td align="left">Es el <strong>objetivo</strong> de la inferencia; lo que queremos descubrir.</td>
+<td align="left"><span class="math inline">\(\theta\)</span> (ej. <span class="math inline">\(\mu\)</span>)</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Estimador</strong></td>
+<td align="left">La medida análoga calculada sobre la <strong>MUESTRA</strong>. Es una variable aleatoria que <strong>varía de muestra a muestra</strong>.</td>
+<td align="left">Es la <strong>herramienta</strong> de la inferencia; lo que usamos para aproximar el parámetro.</td>
+<td align="left"><span class="math inline">\(\hat{\theta}\)</span> (ej. <span class="math inline">\(\bar{X}\)</span>)</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>Ejemplo General: Nivel de Burnout en Psicólogos</em></strong></p>
+<ul>
+<li><strong>Población Objetivo (P.O.):</strong> Todos los psicólogos colegiados de una región.</li>
+<li><strong>Muestra:</strong> Se selecciona aleatoriamente un grupo de 150 psicólogos para la encuesta.</li>
+<li><strong>Parámetro (<span class="math inline">\(\mu\)</span>):</strong> La media real (desconocida) del nivel de <em>burnout</em> de <strong>todos</strong> los psicólogos de la región.</li>
+<li><strong>Estimador (<span class="math inline">\(\bar{X}\)</span>):</strong> La media del nivel de <em>burnout</em> calculada a partir de la muestra de 150 psicólogos (Ej: <span class="math inline">\(\bar{X}=35.2\)</span>). El objetivo es usar <span class="math inline">\(\bar{X}=35.2\)</span> para inferir el valor de <span class="math inline">\(\mu\)</span>.</li>
+</ul>
+<p>El proceso de inferencia busca evaluar la <strong>calidad</strong> y <strong>precisión</strong> del estimador (<span class="math inline">\(\hat{\theta}\)</span>) en su intento de acercarse al verdadero valor del parámetro (<span class="math inline">\(\theta\)</span>).</p>
+</div>
+</div>
+<div id="distribuciones-muestrales" class="section level3 hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Distribuciones Muestrales<a href="estadística-teórica.html#distribuciones-muestrales" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Una <strong>Distribución Muestral</strong> es la distribución de probabilidad de un <strong>estadístico</strong> (como la media <span class="math inline">\(\bar{X}\)</span> o la proporción <span class="math inline">\(\hat{p}\)</span>) cuando ese estadístico se calcula a partir de <strong>todas las posibles muestras</strong> de un tamaño fijo (<span class="math inline">\(n\)</span>) que se pueden extraer de una población.</p>
+<ul>
+<li><strong>Diferencia Clave:</strong> Una distribución de probabilidad describe cómo se comporta una variable <strong>individual</strong> (<span class="math inline">\(X\)</span>), mientras que la distribución muestral describe cómo se comporta un <strong>estimador</strong> (<span class="math inline">\(\hat{\theta}\)</span>) de muestra a muestra.</li>
+</ul>
+<div id="distribución-muestral-de-la-media-barx" class="section level4 hasAnchor" number="3.3.2.1">
+<h4><span class="header-section-number">3.3.2.1</span> Distribución Muestral de la Media (<span class="math inline">\(\bar{X}\)</span>)<a href="#distribuci%C3%B3n-muestral-de-la-media-barx" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>La distribución muestral de la media es fundamental. Dos propiedades clave, derivadas de los teoremas fundamentales, definen su comportamiento:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Media de la Distribución Muestral (<span class="math inline">\(\mu_{\bar{X}}\)</span>):</strong>
+El promedio de todas las medias muestrales posibles es igual a la media poblacional. Esto asegura que la media muestral es un estimador <strong>insesgado</strong>.
+<span class="math display">\[
+\mu_{\bar{X}} = \mu
+\]</span></p></li>
+<li><p><strong>Error Estándar (<span class="math inline">\(\sigma_{\bar{X}}\)</span>):</strong>
+La desviación estándar de la distribución muestral de la media se llama <strong>Error Estándar</strong>. Mide la <strong>variabilidad</strong> (la precisión) del estimador <span class="math inline">\(\bar{X}\)</span>.
+<span class="math display">\[
+\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}
+\]</span></p></li>
+</ol>
+<blockquote>
+<p>Ejemplo: Gastos de Transporte</p>
+</blockquote>
+<p>Consideremos una <strong>población pequeña (<span class="math inline">\(N=5\)</span>)</strong> de estudiantes universitarios con los siguientes gastos diarios de transporte (en Bs.): <span class="math inline">\(X = \{2, 4, 6, 8, 10\}\)</span>.</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Parámetro Poblacional (<span class="math inline">\(\mu\)</span>):</strong>
+<span class="math display">\[\mu = \frac{2 + 4 + 6 + 8 + 10}{5} = \mathbf{6}\]</span></p></li>
+<li><p><strong>Muestreo (<span class="math inline">\(n=3\)</span>):</strong>
+Se extraen <strong>todas</strong> las posibles muestras de tamaño <span class="math inline">\(n=3\)</span>. Existen <span class="math inline">\(\binom{5}{3} = 10\)</span> muestras posibles.</p></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Muestra</th>
+<th align="center">Gastos (<span class="math inline">\(X\)</span>)</th>
+<th align="center">Media Muestral (<span class="math inline">\(\bar{X}\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">1</td>
+<td align="center">{2, 4, 6}</td>
+<td align="center">4.00</td>
+</tr>
+<tr class="even">
+<td align="center">2</td>
+<td align="center">{2, 4, 8}</td>
+<td align="center">4.67</td>
+</tr>
+<tr class="odd">
+<td align="center">3</td>
+<td align="center">{2, 4, 10}</td>
+<td align="center">5.33</td>
+</tr>
+<tr class="even">
+<td align="center">4</td>
+<td align="center">{2, 6, 8}</td>
+<td align="center">5.33</td>
+</tr>
+<tr class="odd">
+<td align="center">5</td>
+<td align="center">{2, 6, 10}</td>
+<td align="center">6.00</td>
+</tr>
+<tr class="even">
+<td align="center">6</td>
+<td align="center">{2, 8, 10}</td>
+<td align="center">6.67</td>
+</tr>
+<tr class="odd">
+<td align="center">7</td>
+<td align="center">{4, 6, 8}</td>
+<td align="center">6.00</td>
+</tr>
+<tr class="even">
+<td align="center">8</td>
+<td align="center">{4, 6, 10}</td>
+<td align="center">6.67</td>
+</tr>
+<tr class="odd">
+<td align="center">9</td>
+<td align="center">{4, 8, 10}</td>
+<td align="center">7.33</td>
+</tr>
+<tr class="even">
+<td align="center">10</td>
+<td align="center">{6, 8, 10}</td>
+<td align="center">8.00</td>
+</tr>
+</tbody>
+</table>
+<ol start="3" style="list-style-type: decimal">
+<li><strong>Verificación de la Media Muestral (<span class="math inline">\(\mu_{\bar{X}}\)</span>):</strong>
+El promedio de las 10 medias muestrales es:
+<span class="math display">\[\mu_{\bar{X}} = \frac{4.00 + \dots + 8.00}{10} = \frac{60}{10} = \mathbf{6}\]</span></li>
+</ol>
+<p><strong>Conclusión del Ejemplo:</strong>
+Se confirma que la <strong>media de la distribución muestral (<span class="math inline">\(\mu_{\bar{X}}=6\)</span>) es idéntica a la media poblacional (<span class="math inline">\(\mu=6\)</span>)</strong>. Las medias de las muestras individuales (<span class="math inline">\(\bar{X}\)</span>) varían, pero su promedio exacto es el verdadero parámetro poblacional. El <strong>Error Estándar</strong> sería la desviación de estos 10 valores de <span class="math inline">\(\bar{X}\)</span> respecto a 6.</p>
+</div>
+</div>
+<div id="ley-de-los-grandes-números-lgn" class="section level3 hasAnchor" number="3.3.3">
+<h3><span class="header-section-number">3.3.3</span> Ley de los Grandes Números (LGN)<a href="#ley-de-los-grandes-n%C3%BAmeros-lgn" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Establece que, a medida que el tamaño de la muestra (<span class="math inline">\(n\)</span>) aumenta, la media muestral (<span class="math inline">\(\bar{X}\)</span>) se aproxima cada vez más a la media poblacional (<span class="math inline">\(\mu\)</span>) (<span class="citation">Moore, McCabe, and Craig (2013)</span>).</p>
+<p><span class="math display">\[
+\lim_{n \to \infty} P(|\bar{X} - \mu| &lt; \varepsilon) = 1
+\]</span>
+<em>Aplicación:</em> Para tener una estimación precisa del nivel promedio de <strong>satisfacción laboral</strong> en una empresa, se necesitan encuestar a muchos empleados. Cuanto mayor sea <span class="math inline">\(n\)</span>, más cerca estará <span class="math inline">\(\bar{X}\)</span> del valor real <span class="math inline">\(\mu\)</span>.</p>
+</div>
+<div id="teorema-del-límite-central-tlc" class="section level3 hasAnchor" number="3.3.4">
+<h3><span class="header-section-number">3.3.4</span> Teorema del Límite Central (TLC)<a href="#teorema-del-l%C3%ADmite-central-tlc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Si se toma una <strong>muestra aleatoria suficientemente grande</strong> (<span class="math inline">\(n&gt;20\)</span>) de <strong>cualquier población</strong>, la distribución de la <strong>media muestral (<span class="math inline">\(\bar{X}\)</span>)</strong> tenderá a ser <strong>aproximadamente normal</strong> (<span class="citation">Navarro, Foxcroft, and Faulkenberry (2025)</span>).</p>
+<p>La media muestral estandarizada sigue una distribución normal estándar:</p>
+<p><span class="math display">\[
+Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim N(0,1)
+\]</span></p>
+</div>
+</div>
+<div id="estimación-de-parámetros" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Estimación de Parámetros<a href="#estimaci%C3%B3n-de-par%C3%A1metros" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>La <strong>Estimación</strong> es el proceso de aproximar un valor desconocido de la población (<span class="math inline">\(\theta\)</span>) usando el dato de la muestra (<span class="math inline">\(\hat{\theta}\)</span>).</p>
+<div id="estimación-puntual-para-la-media" class="section level3 hasAnchor" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> Estimación Puntual para la Media<a href="#estimaci%C3%B3n-puntual-para-la-media" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Se utiliza un <strong>valor único</strong> (el estadístico muestral) como la mejor aproximación del parámetro poblacional.</p>
+<p><span class="math display">\[
+\hat{\mu} = \bar{X}
+\]</span></p>
+<p><em>Ejemplo:</em> Si la media de <strong>autoeficacia percibida</strong> en una muestra de 50 estudiantes es <span class="math inline">\(\bar{X} = 75\)</span>, la estimación puntual de la media poblacional (<span class="math inline">\(\mu\)</span>) es 75.</p>
+</div>
+<div id="estimación-por-intervalo-de-confianza-ic-para-la-media" class="section level3 hasAnchor" number="3.4.2">
+<h3><span class="header-section-number">3.4.2</span> Estimación por Intervalo de Confianza (IC) para la Media<a href="#estimaci%C3%B3n-por-intervalo-de-confianza-ic-para-la-media" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Es un <strong>rango de valores</strong> que probablemente contiene el parámetro poblacional con un <strong>nivel de confianza (<span class="math inline">\(1-\alpha\)</span>)</strong> determinado.</p>
+<p>Si <span class="math inline">\(\sigma\)</span> es conocida:</p>
+<p><span class="math display">\[
+IC_{(1-\alpha)} = \bar{X} \pm Z_{\alpha/2} \frac{\sigma}{\sqrt{n}}
+\]</span></p>
+<ul>
+<li><strong>Valores de <span class="math inline">\(Z_{\alpha/2}\)</span> para niveles de confianza comunes:</strong>
+<ul>
+<li><strong>90% de Confianza</strong>: <span class="math inline">\(Z_{\alpha/2} = 1.645\)</span></li>
+<li><strong>95% de Confianza</strong>: <span class="math inline">\(Z_{\alpha/2} = 1.96\)</span></li>
+<li><strong>99% de Confianza</strong>: <span class="math inline">\(Z_{\alpha/2} = 2.576\)</span> (o 2.58)</li>
+</ul></li>
+</ul>
+<p><em>Ejemplo:</em> Un IC al 95% para la media de <strong>estrés postraumático</strong> es <span class="math inline">\((24.3, 27.1)\)</span>. Esto significa que si repitiéramos el muestreo muchas veces, el 95% de los intervalos construidos contendrían la verdadera media poblacional.</p>
+<p>Si <span class="math inline">\(\sigma\)</span> no se conoce se la estima mediante la desviación estándar <span class="math inline">\(s\)</span>.</p>
+</div>
+<div id="pruebas-de-hipótesis" class="section level3 hasAnchor" number="3.4.3">
+<h3><span class="header-section-number">3.4.3</span> Pruebas de Hipótesis<a href="#pruebas-de-hip%C3%B3tesis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Una <strong>Prueba de Hipótesis</strong> es un procedimiento estadístico formalizado para tomar una decisión sobre un parámetro poblacional, al contrastar dos afirmaciones opuestas usando la evidencia de la muestra. Permite determinar si una creencia o conjetura (<span class="math inline">\(\hat{\theta}\)</span>) está justificada por los datos.</p>
+<div id="pasos-de-la-prueba-de-hipótesis-general" class="section level4 hasAnchor" number="3.4.3.1">
+<h4><span class="header-section-number">3.4.3.1</span> Pasos de la Prueba de Hipótesis (General)<a href="#pasos-de-la-prueba-de-hip%C3%B3tesis-general" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>El procedimiento general sigue una estructura de cuatro pasos:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Formular Hipótesis (<span class="math inline">\(H_0\)</span> y <span class="math inline">\(H_a\)</span>)</strong>: Se establecen la afirmación que se quiere probar (nula) y su alternativa.</li>
+<li><strong>Establecer Nivel de Significación (<span class="math inline">\(\alpha\)</span>)</strong>: Se define la probabilidad máxima que estamos dispuestos a aceptar de cometer un Error de Tipo I (generalmente <span class="math inline">\(\alpha=0.05\)</span> o <span class="math inline">\(0.01\)</span>).</li>
+<li><strong>Construir el Estadístico de Prueba</strong>: Se calcula el valor estandarizado (ej. <span class="math inline">\(Z\)</span>, <span class="math inline">\(t\)</span>) que mide cuán lejos está el estimador muestral del valor propuesto en <span class="math inline">\(H_0\)</span>.</li>
+<li><strong>Evaluar y Concluir</strong>: Se compara el estadístico de prueba con los valores críticos o se usa el <span class="math inline">\(P\)</span>-valor para decidir si se <strong>rechaza</strong> o <strong>no se rechaza</strong> la Hipótesis Nula.</li>
+</ol>
+</div>
+<div id="formulación-de-hipótesis" class="section level4 hasAnchor" number="3.4.3.2">
+<h4><span class="header-section-number">3.4.3.2</span> Formulación de Hipótesis<a href="#formulaci%C3%B3n-de-hip%C3%B3tesis" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ol style="list-style-type: decimal">
+<li><strong>Hipótesis Nula (<span class="math inline">\(H_0\)</span>)</strong>: Es la afirmación que se quiere probar y la que asume que <strong>no hay efecto, cambio o diferencia</strong>. Siempre incluye un signo de igualdad (Ej: <span class="math inline">\(\mu = 10\)</span>).</li>
+<li><strong>Hipótesis Alternativa (<span class="math inline">\(H_a\)</span>)</strong>: Es la afirmación <strong>contraria a la nula</strong>. Es lo que se sospecha o se quiere demostrar.
+<ul>
+<li><strong>Prueba Bilateral</strong>: <span class="math inline">\(H_a: \mu \ne 10\)</span></li>
+<li><strong>Prueba Unilateral a la Derecha</strong>: <span class="math inline">\(H_a: \mu &gt; 10\)</span></li>
+<li><strong>Prueba Unilateral a la Izquierda</strong>: <span class="math inline">\(H_a: \mu &lt; 10\)</span></li>
+</ul></li>
+</ol>
+</div>
+<div id="errores-en-la-prueba-de-hipótesis" class="section level4 hasAnchor" number="3.4.3.3">
+<h4><span class="header-section-number">3.4.3.3</span> Errores en la Prueba de Hipótesis<a href="#errores-en-la-prueba-de-hip%C3%B3tesis" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>El objetivo es minimizar la probabilidad de cometer estos errores:</p>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Tipo de Error</th>
+<th align="left">Definición</th>
+<th align="left">Consecuencia (Riesgo Controlado)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Error de Tipo I (<span class="math inline">\(\alpha\)</span>)</strong></td>
+<td align="left"><strong>Rechazar</strong> la hipótesis nula (<span class="math inline">\(H_0\)</span>) cuando en realidad es <strong>verdadera</strong>.</td>
+<td align="left">Falso Positivo. Se controla con el nivel de significación (<span class="math inline">\(\alpha\)</span>).</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Error de Tipo II (<span class="math inline">\(\beta\)</span>)</strong></td>
+<td align="left"><strong>No rechazar</strong> la hipótesis nula (<span class="math inline">\(H_0\)</span>) cuando en realidad es <strong>falsa</strong>.</td>
+<td align="left">Falso Negativo. Se relaciona con la potencia de la prueba (<span class="math inline">\(1-\beta\)</span>).</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="prueba-de-hipótesis-para-la-media-mu" class="section level4 hasAnchor" number="3.4.3.4">
+<h4><span class="header-section-number">3.4.3.4</span> Prueba de Hipótesis para la Media (<span class="math inline">\(\mu\)</span>)<a href="#prueba-de-hip%C3%B3tesis-para-la-media-mu" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Se utiliza para probar si la media poblacional (<span class="math inline">\(\mu\)</span>) es igual a un valor conocido ($ _0 $). El estadístico de prueba (generalmente <span class="math inline">\(Z\)</span> o <span class="math inline">\(t\)</span>) mide la distancia de la media muestral (<span class="math inline">\(\bar{X}\)</span>) a <span class="math inline">\(\mu_0\)</span> en términos de errores estándar.</p>
+<p><strong>Estadístico de Prueba (para la media con <span class="math inline">\(\sigma\)</span> conocida):</strong></p>
+<p><span class="math display">\[
+Z_{0} = \frac{\bar{X} - \mu_0}{\sigma / \sqrt{n}}
+\]</span>
+Para pruebas bilaterales, la decisión; Se rechaza <span class="math inline">\(H_0\)</span> cuando:</p>
+<p><span class="math display">\[Z_0&gt;Z_{\alpha/2} \quad ó \quad Z_0&lt;-Z_{\alpha/2}\]</span></p>
+<p>Los valores usuales para los <span class="math inline">\(Z_{\alpha/2}\)</span> son:</p>
+<ul>
+<li>al 10 de significanca: <span class="math inline">\(Z_{\alpha/2}=1.64\)</span></li>
+<li>al 5 de significanca: <span class="math inline">\(Z_{\alpha/2}=1.96\)</span></li>
+<li>al 1 de significanca: <span class="math inline">\(Z_{\alpha/2}=2.58\)</span></li>
+</ul>
+<p>Para las pruebas unilaterales se utiliza el mismo estadístico de prueba <span class="math inline">\(Z_0\)</span>, con las siguientes hipótesis y región de rechazo.</p>
+<p><span class="math display">\[H_0: \mu=\mu_0\]</span>
+<span class="math display">\[H_1: \mu&gt;\mu_0\]</span>
+Se rechaza <span class="math inline">\(H_0\)</span> si <span class="math inline">\(Z_0&gt;Z{\alpha}\)</span>.</p>
+<p><span class="math display">\[H_0: \mu=\mu_0\]</span></p>
+<p><span class="math display">\[H_1: \mu &lt; \mu_0\]</span>
+Se rechaza <span class="math inline">\(H_0\)</span> si <span class="math inline">\(Z_0&lt;-Z{\alpha}\)</span></p>
+<p>Los valores usuales para los <span class="math inline">\(Z_{\alpha}\)</span> de pruebas unilaterales.</p>
+<ul>
+<li><span class="math inline">\(Z_{0.1}=1.28\)</span></li>
+<li><span class="math inline">\(Z_{0.05}=1.64\)</span></li>
+<li><span class="math inline">\(Z_{0.01}=2.33\)</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="tamaño-de-muestra" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Tamaño de Muestra<a href="#tama%C3%B1o-de-muestra" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>El cálculo del <strong>tamaño de muestra (<span class="math inline">\(n\)</span>)</strong> es uno de los pasos iniciales más críticos en cualquier investigación que emplee muestreo, pues define la capacidad del estudio para obtener conclusiones válidas y precisas.</p>
+<div id="relevancia-de-la-aleatoriedad-y-el-equilibrio-logístico" class="section level3 hasAnchor" number="3.5.1">
+<h3><span class="header-section-number">3.5.1</span> Relevancia de la Aleatoriedad y el Equilibrio Logístico<a href="#relevancia-de-la-aleatoriedad-y-el-equilibrio-log%C3%ADstico" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Pertinencia del Cálculo:</strong> El cálculo del tamaño de muestra solo tiene sentido y validez cuando se utiliza un <strong>muestreo aleatorio</strong>. Si la muestra es no aleatoria (por conveniencia), la inferencia estadística está comprometida, independientemente del tamaño calculado.</li>
+<li><strong>Balance Estadístico vs. Logístico:</strong> Determinar <span class="math inline">\(n\)</span> requiere un equilibrio entre:
+<ul>
+<li><strong>Necesidad Estadística:</strong> El tamaño mínimo requerido para alcanzar la precisión deseada (reducir el error estándar o aumentar la potencia).</li>
+<li><strong>Factibilidad Logística:</strong> Los recursos disponibles (tiempo, costo, personal) para recolectar los datos.</li>
+</ul></li>
+</ul>
+</div>
+<div id="cálculo-para-fines-de-inferencia-descriptiva-margen-de-error" class="section level3 hasAnchor" number="3.5.2">
+<h3><span class="header-section-number">3.5.2</span> Cálculo para Fines de Inferencia Descriptiva (Margen de Error)<a href="#c%C3%A1lculo-para-fines-de-inferencia-descriptiva-margen-de-error" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Para la inferencia descriptiva, el cálculo se basa en el <strong>margen de error (<span class="math inline">\(e\)</span>)</strong> o precisión deseada, que es la máxima diferencia aceptable entre el estimador muestral (<span class="math inline">\(\hat{\theta}\)</span>) y el parámetro poblacional (<span class="math inline">\(\theta\)</span>).</p>
+<div id="cálculo-para-la-media" class="section level4 hasAnchor" number="3.5.2.1">
+<h4><span class="header-section-number">3.5.2.1</span> Cálculo para la Media<a href="#c%C3%A1lculo-para-la-media" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Se utiliza cuando se desea estimar el promedio (<span class="math inline">\(\mu\)</span>).
+<span class="math display">\[
+n = \frac{Z^2 \cdot \sigma^2}{e^2}=\left(\frac{z*\sigma}{e}\right)^2
+\]</span>
+Donde:
+* <span class="math inline">\(Z\)</span>: Valor crítico asociado al nivel de confianza deseado.
+* <span class="math inline">\(\sigma^2\)</span>: Varianza de la población (a menudo estimada mediante estudios piloto o valores conservadores).
+* <span class="math inline">\(e\)</span>: Margen de error o precisión máxima aceptable.</p>
+</div>
+<div id="cálculo-para-la-proporción" class="section level4 hasAnchor" number="3.5.2.2">
+<h4><span class="header-section-number">3.5.2.2</span> Cálculo para la Proporción<a href="#c%C3%A1lculo-para-la-proporci%C3%B3n" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Se utiliza cuando se desea estimar un porcentaje o proporción (<span class="math inline">\(p\)</span>).
+<span class="math display">\[
+n = \frac{Z^2 \cdot p(1-p)}{e^2}
+\]</span>
+Donde:
+* <span class="math inline">\(Z\)</span>: Valor crítico asociado al nivel de confianza.
+* <span class="math inline">\(p\)</span>: Proporción poblacional esperada (si se desconoce, se usa <span class="math inline">\(p=0.5\)</span> para maximizar el tamaño de muestra.
+* <span class="math inline">\(e\)</span>: Margen de error expresado como proporción, usualmente <span class="math inline">\(0.05\)</span></p>
+</div>
+</div>
+<div id="cálculo-para-fines-de-inferencia-exploratoria-potencia" class="section level3 hasAnchor" number="3.5.3">
+<h3><span class="header-section-number">3.5.3</span> Cálculo para Fines de Inferencia Exploratoria (Potencia)<a href="#c%C3%A1lculo-para-fines-de-inferencia-exploratoria-potencia" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Para la inferencia exploratoria (pruebas de hipótesis), el tamaño de muestra se calcula para asegurar la <strong>potencia</strong> adecuada, minimizando el <strong>Error de Tipo II (<span class="math inline">\(\beta\)</span>)</strong>. Este cálculo debe considerar la magnitud del efecto.</p>
+<div id="cálculo-básico-para-la-media-potencia" class="section level4 hasAnchor" number="3.5.3.1">
+<h4><span class="header-section-number">3.5.3.1</span> Cálculo Básico para la Media (Potencia)<a href="#c%C3%A1lculo-b%C3%A1sico-para-la-media-potencia" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>El cálculo se realiza para detectar una diferencia mínima esperada (<span class="math inline">\(\mu_1 - \mu_0\)</span>, la magnitud del efecto) con una potencia deseada (<span class="math inline">\(1-\beta\)</span>) y un nivel de significación <span class="math inline">\(\alpha\)</span>.</p>
+<p><span class="math display">\[
+n = \frac{(Z_{\alpha/2} + Z_{\beta})^2 \cdot \sigma^2}{(\mu_1 - \mu_0)^2}
+\]</span>
+Donde:</p>
+<ul>
+<li><span class="math inline">\(Z_{\alpha/2}\)</span>: Valor Z asociado al nivel de significación (<span class="math inline">\(\alpha\)</span>).</li>
+<li><span class="math inline">\(Z_{\beta}\)</span>: Valor Z asociado a la probabilidad del Error de Tipo II (<span class="math inline">\(\beta\)</span>).</li>
+<li><span class="math inline">\((\mu_1 - \mu_0)\)</span>: La magnitud mínima del efecto (diferencia clínicamente significativa) que se espera detectar.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="referencias-1" class="section level2 hasAnchor" number="3.6">
+<h2><span class="header-section-number">3.6</span> Referencias<a href="estadística-teórica.html#referencias-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div class="csl-entry">
+Agresti, Alan, and Barbara Finlay. 2018. <em>Statistical Methods for the Social Sciences</em>. 5th ed. Boston: Pearson.
+</div>
+<div class="csl-entry">
+Cohen, Jacob. 1994. <span>“The Earth Is Round (p &lt; .05).”</span> <em>American Psychologist</em> 49 (12): 997–1003.
+</div>
+<div class="csl-entry">
+Feller, William. 1968. <em>An Introduction to Probability Theory and Its Applications</em>. 3rd ed. New York: John Wiley &amp; Sons.
+</div>
+<div class="csl-entry">
+Gelman, Andrew, and Deborah Nolan. 2017. <em>Teaching Statistics: A Bag of Tricks</em>. 2nd ed. Oxford: Oxford University Press.
+</div>
+<div class="csl-entry">
+Groves, Robert M., Floyd J. Fowler, Mick P. Couper, James M. Lepkowski, Eleanor Singer, and Roger Tourangeau. 2009. <em>Survey Methodology</em>. 2nd ed. Hoboken, NJ: Wiley.
+</div>
+<div class="csl-entry">
+Kish, Leslie. 1995. <em>Survey Sampling</em>. New York: John Wiley &amp; Sons.
+</div>
+<div class="csl-entry">
+Montgomery, Douglas C., and George C. Runger. 2014. <em>Applied Statistics and Probability for Engineers</em>. 6th ed. Hoboken, NJ: John Wiley &amp; Sons.
+</div>
+<div class="csl-entry">
+Moore, David S., George P. McCabe, and Bruce A. Craig. 2013. <em>Introduction to the Practice of Statistics</em>. 7th ed. New York: W. H. Freeman.
+</div>
+<div class="csl-entry">
+Navarro, Danielle J., David R. Foxcroft, and Thomas J. Faulkenberry. 2025. <span>“Learning Statistics with JASP: A Tutorial for Psychology Students and Other Beginners.”</span> <a href="https://learnstatswithjasp.com">https://learnstatswithjasp.com</a>.
+</div>
+<div class="csl-entry">
+Shadish, William R., Thomas D. Cook, and Donald T. Campbell. 2002. <em>Experimental and Quasi-Experimental Designs for Generalized Causal Inference</em>. Boston: Houghton Mifflin.
+</div>
+<div class="csl-entry">
+Stevens, S. S. 1946. <span>“On the Theory of Scales of Measurement.”</span> <em>Science</em> 103 (2684): 677–80.
+</div>
+<div class="csl-entry">
+Wackerly, Dennis D., William Mendenhall, and Richard L. Scheaffer. 2008. <em>Mathematical Statistics with Applications</em>. 7th ed. Belmont, CA: Thomson Brooks/Cole.
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="estadística-descriptiva.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
