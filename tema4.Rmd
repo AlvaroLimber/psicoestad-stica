@@ -1,0 +1,151 @@
+# Herramientas estadísticas
+
+Recordar los pasos en las pruebas de hipótesis
+
+1.  **Formular Hipótesis ($H_0$ y $H_a$)**
+2.  **Establecer Nivel de Significación ($\alpha$)**
+3.  **Construir el Estadístico de Prueba**
+4.  **Evaluar y Concluir**
+
+El *p*-valor es una medida que permite evaluar la evidencia en contra de una hipótesis nula. Representa la probabilidad de obtener un resultado tan extremo (o más) que el observado, asumiendo que la hipótesis nula es verdadera. Un *p*-valor pequeño indica que los datos son poco compatibles con la hipótesis nula y sugiere evidencia a favor de la alternativa.
+
+## Análisis de datos categóricos: prueba $\chi^2$
+
+Cuando las variables son **categóricas** (nominales u ordinales), la información se resume en términos de **frecuencias**.  
+La **prueba chi-cuadrado ($\chi^2$)** permite evaluar si las frecuencias observadas difieren de las que esperaríamos bajo una hipótesis teórica.  
+Es una de las herramientas más utilizadas en psicología para analizar respuestas en categorías o preferencias [@LSJ2025].
+
+### Prueba de bondad de ajuste
+
+Evalúa si las frecuencias observadas en una variable categórica **se ajustan a un modelo teórico** o distribución esperada.
+
+- Hipótesis
+
+$$
+H_0: \text{Las frecuencias observadas se ajustan a las frecuencias esperadas.}\\
+H_1: \text{Las frecuencias observadas difieren significativamente de las esperadas.}
+$$
+
+- Estadístico
+
+$$
+\chi^2_0 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}
+$$
+
+donde:  
+- $O_i$: frecuencia observada,  
+- $E_i$: frecuencia esperada bajo \(H_0\),  
+- $k$: número de categorías.  
+
+Los **grados de libertad** se calculan como $gl = k - 1$.  
+El valor de $\chi^2$ se compara con la distribución chi-cuadrado con esos grados de libertad.
+
+- Decisión
+
+Se rechaza la H0 si:
+
+$$\chi^2_0> \chi^2_{\alpha, k-1}$$
+
+#### Ejemplo
+
+Un psicólogo evalúa si las preferencias por cuatro tipos de música (pop, rock, clásica, jazz) se distribuyen uniformemente.  
+Las frecuencias observadas son (30, 25, 20, 25) y las esperadas, si no hubiera preferencia, serían iguales (25 cada una):
+
+\[
+\chi^2 = \frac{(30-25)^2}{25} + \frac{(25-25)^2}{25} + \frac{(20-25)^2}{25} + \frac{(25-25)^2}{25} = 2
+\]
+
+Con \(gl = 3\) y $\alpha = 0.05$, el valor crítico es 7.815.  
+Como 2 < 7.815, **no se rechaza $H_0$** → no hay evidencia de diferencia significativa en las preferencias.
+
+Usando el p-valor (JASP)
+
+Si $p < \alpha$, se concluye que las frecuencias **no se ajustan** al modelo teórico.  
+Si $p \ge \alpha$, las diferencias observadas son compatibles con la hipótesis nula.  
+La prueba evalúa el **grado de ajuste**, no la dirección del efecto [@LSJ2025].
+
+### Prueba de independencia
+
+Evalúa si **dos variables categóricas están asociadas** o son **independientes**.  
+Se trabaja con una **tabla de contingencia** de tamaño $r \times c$.
+
+- Hipótesis
+
+$$
+H_0: \text{Las variables son independientes.}\\
+H_1: \text{Existe asociación entre las variables.}
+$$
+
+- Estadístico de Prueba
+
+$$
+\chi^2_0 = \sum_{i=1}^{r}\sum_{j=1}^{c} \frac{(O_{ij} - E_{ij})^2}{E_{ij}}
+$$
+Donde
+
+$$
+E_{ij} = \frac{(F_{i\cdot})(F_{\cdot j})}{n}
+$$
+
+donde $F_{i\cdot}$ y $F_{\cdot j}$ son los totales marginales por fila y columna, respectivamente, y $n$ es el total general.
+
+Los grados de libertad son: $gl = (r-1)(c-1)$
+
+- Decisión
+
+Se rechaza H0 si:
+
+$$\chi^2_0> \chi^2_{\alpha, (r-1)(c-1)}$$
+
+#### Ejemplo
+
+Se evalúa si el **género (hombre/mujer)** está asociado con la **preferencia de horario (mañana/tarde)** en 100 estudiantes:
+
+|               | Mañana | Tarde | Total |
+|---------------|:------:|:-----:|:-----:|
+| Hombre        | 20     | 30    | 50    |
+| Mujer         | 10     | 40    | 50    |
+| **Total**     | 30     | 70    | 100   |
+
+Frecuencia esperada para la celda (Hombre, Mañana):  
+
+$$
+E_{11} = \frac{(50)(30)}{100} = 15
+$$
+
+El estadístico $\chi^2$ calculado es 6.67 con $gl = 1$.   El valor crítico a $\alpha = 0.05$ es 3.84 →  **se rechaza $H_0$**, concluyendo que el género y la preferencia de horario están asociados.
+
+### Consideraciones y recomendaciones prácticas
+
+- Cada frecuencia esperada debe ser al menos **5** para la validez de la prueba.  
+- En tablas 2×2 puede aplicarse la **corrección de continuidad de Yates**.  
+- Si hay celdas pequeñas, se puede usar la **prueba exacta de Fisher**.  
+- La prueba $\chi^2$ **no indica la magnitud de la asociación**, solo su existencia.  
+- Para cuantificarla, se pueden usar medidas derivadas como el **V de Cramer** o el **coeficiente de contingencia (C)**.
+
+*Ejemplo interpretativo:*  
+En un estudio sobre estilos de afrontamiento y género, se obtiene $\chi^2(2) = 10.5$, p < .01.  
+Esto sugiere una relación significativa entre el género y el estilo de afrontamiento.
+
+---
+
+### Resumen comparativo
+
+| Tipo de prueba             | Propósito principal                  | Hipótesis nula ($H_0$) | Grados de libertad | Ejemplo típico |
+|-----------------------------|--------------------------------------|------------------------|-------------------|----------------|
+| **Bondad de ajuste**        | Contrastar una distribución observada con una esperada | Los datos siguen la distribución teórica | \(k - 1\) | Preferencia por tipos de música |
+| **Independencia**           | Evaluar asociación entre dos variables categóricas | Las variables son independientes | \((r-1)(c-1)\) | Asociación entre género y estilo de afrontamiento |
+
+---
+
+> La prueba $\chi^2$ es una herramienta flexible y esencial para el análisis de datos categóricos.  
+> Su interpretación debe complementarse con medidas de tamaño del efecto y con la inspección de las tablas de contingencia [@LSJ2025; @Moore2013].
+
+
+## Comparación de dos medias: pruebas z, t y no paramétricas
+
+## Correlación y regresión lineal 
+
+## Comparar varias medias: ANOVA de una vía
+
+## ANOVA factorial y ANCOVA

@@ -63,3 +63,15 @@ cálculo-para-la-proporción
 cálculo-para-fines-de-inferencia-exploratoria-potencia
 cálculo-básico-para-la-media-potencia
 referencias-1
+herramientas-estadísticas
+análisis-de-datos-categóricos-prueba-chi2
+prueba-de-bondad-de-ajuste
+ejemplo
+prueba-de-independencia
+ejemplo-1
+consideraciones-y-recomendaciones-prácticas
+resumen-comparativo
+comparación-de-dos-medias-pruebas-z-t-y-no-paramétricas
+correlación-y-regresión-lineal
+comparar-varias-medias-anova-de-una-vía
+anova-factorial-y-ancova

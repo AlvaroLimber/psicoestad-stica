@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 Herramientas estadísticas | Psicoestadística</title>
+  <meta name="description" content="Este libro esta destinado a la materia de Psicoestadística de la carrera de Psicología de la Universidad Católica Boliviana, sede La Paz." />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 Herramientas estadísticas | Psicoestadística" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Este libro esta destinado a la materia de Psicoestadística de la carrera de Psicología de la Universidad Católica Boliviana, sede La Paz." />
+  <meta name="github-repo" content="alvarolimber/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 Herramientas estadísticas | Psicoestadística" />
+  
+  <meta name="twitter:description" content="Este libro esta destinado a la materia de Psicoestadística de la carrera de Psicología de la Universidad Católica Boliviana, sede La Paz." />
+  
+
+<meta name="author" content="MSc. Alvaro Chirino Gutierrez" />
+
+
+<meta name="date" content="2025-10-27" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="estadística-teórica.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#audiencia"><i class="fa fa-check"></i>Audiencia</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#estructura-del-libro"><i class="fa fa-check"></i>Estructura del libro</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="tema4.html"><a href="#dise%C3%B1o-estad%C3%ADstico"><i class="fa fa-check"></i><b>1</b> Diseño estadístico</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="tema4.html"><a href="#qu%C3%A9-es-la-estad%C3%ADstica"><i class="fa fa-check"></i><b>1.1</b> ¿Qué es la estadística?</a></li>
+<li class="chapter" data-level="1.2" data-path="tema4.html"><a href="#poblaci%C3%B3n-objetivo-po-universo"><i class="fa fa-check"></i><b>1.2</b> Población Objetivo (PO) — Universo</a></li>
+<li class="chapter" data-level="1.3" data-path="tema4.html"><a href="#coberturas-estad%C3%ADsticas"><i class="fa fa-check"></i><b>1.3</b> Coberturas estadísticas</a></li>
+<li class="chapter" data-level="1.4" data-path="tema4.html"><a href="#unidades-estad%C3%ADsticas"><i class="fa fa-check"></i><b>1.4</b> Unidades estadísticas</a></li>
+<li class="chapter" data-level="1.5" data-path="tema4.html"><a href="#fuentes-de-informaci%C3%B3n"><i class="fa fa-check"></i><b>1.5</b> Fuentes de información</a></li>
+<li class="chapter" data-level="1.6" data-path="tema4.html"><a href="#enfoques-para-el-an%C3%A1lisis"><i class="fa fa-check"></i><b>1.6</b> Enfoques para el análisis</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="tema4.html"><a href="#fuentes-de-informaci%C3%B3n-enfoques-de-an%C3%A1lisis"><i class="fa fa-check"></i><b>1.6.1</b> Fuentes de información × Enfoques de análisis</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="diseño-estadístico.html"><a href="diseño-estadístico.html"><i class="fa fa-check"></i><b>1.7</b> Validez interna y externa</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="tema4.html"><a href="#fuentes-de-informaci%C3%B3n-tipos-de-validez"><i class="fa fa-check"></i><b>1.7.1</b> Fuentes de información × Tipos de validez</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="tema4.html"><a href="#sesgos-posibles-en-la-producci%C3%B3n-de-datos"><i class="fa fa-check"></i><b>1.8</b> Sesgos posibles en la producción de datos</a>
+<ul>
+<li class="chapter" data-level="1.8.1" data-path="tema4.html"><a href="#fuentes-de-informaci%C3%B3n-sesgos-m%C3%A1s-probables"><i class="fa fa-check"></i><b>1.8.1</b> Fuentes de información × Sesgos más probables</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="tema4.html"><a href="#variables-y-tipolog%C3%ADa"><i class="fa fa-check"></i><b>1.9</b> Variables y tipología</a></li>
+<li class="chapter" data-level="1.10" data-path="tema4.html"><a href="#medici%C3%B3n"><i class="fa fa-check"></i><b>1.10</b> Medición</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="tema4.html"><a href="#estad%C3%ADstica-descriptiva"><i class="fa fa-check"></i><b>2</b> Estadística descriptiva</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="tema4.html"><a href="#ordenaci%C3%B3n-de-los-datos"><i class="fa fa-check"></i><b>2.1</b> Ordenación de los datos</a></li>
+<li class="chapter" data-level="2.2" data-path="tema4.html"><a href="#estad%C3%ADsticas-para-variables-cualitativas"><i class="fa fa-check"></i><b>2.2</b> Estadísticas para variables cualitativas</a></li>
+<li class="chapter" data-level="2.3" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html"><i class="fa fa-check"></i><b>2.3</b> Medidas de resumen (Tendencia central)</a></li>
+<li class="chapter" data-level="2.4" data-path="tema4.html"><a href="#medidas-de-dispersi%C3%B3n"><i class="fa fa-check"></i><b>2.4</b> Medidas de dispersión</a></li>
+<li class="chapter" data-level="2.5" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#medidas-de-forma"><i class="fa fa-check"></i><b>2.5</b> Medidas de forma</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="tema4.html"><a href="#asimetr%C3%ADa-as"><i class="fa fa-check"></i><b>2.5.1</b> Asimetría (AS)</a></li>
+<li class="chapter" data-level="2.5.2" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#curtosis-ku"><i class="fa fa-check"></i><b>2.5.2</b> Curtosis (KU)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="tema4.html"><a href="#visualizaci%C3%B3n-univariante"><i class="fa fa-check"></i><b>2.6</b> Visualización univariante</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#para-variables-cualitativas"><i class="fa fa-check"></i><b>2.6.1</b> Para variables cualitativas</a></li>
+<li class="chapter" data-level="2.6.2" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#para-variables-cuantitativas"><i class="fa fa-check"></i><b>2.6.2</b> Para variables cuantitativas</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#referencias"><i class="fa fa-check"></i><b>2.7</b> Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tema4.html"><a href="#estad%C3%ADstica-te%C3%B3rica"><i class="fa fa-check"></i><b>3</b> Estadística Teórica</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="estadística-teórica.html"><a href="estadística-teórica.html"><i class="fa fa-check"></i><b>3.1</b> Fundamentos de Probabilidad y Axiomas</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="estadística-teórica.html"><a href="estadística-teórica.html#experimento-aleatorio-y-espacio-muestral"><i class="fa fa-check"></i><b>3.1.1</b> Experimento Aleatorio y Espacio Muestral</a></li>
+<li class="chapter" data-level="3.1.2" data-path="tema4.html"><a href="#axiomas-de-la-probabilidad-kolmog%C3%B3rov"><i class="fa fa-check"></i><b>3.1.2</b> Axiomas de la Probabilidad (Kolmogórov)</a></li>
+<li class="chapter" data-level="3.1.3" data-path="estadística-teórica.html"><a href="estadística-teórica.html#enfoques-conceptuales-de-la-probabilidad"><i class="fa fa-check"></i><b>3.1.3</b> Enfoques Conceptuales de la Probabilidad</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="estadística-teórica.html"><a href="estadística-teórica.html#variable-aleatoria-y-distribuciones"><i class="fa fa-check"></i><b>3.2</b> Variable Aleatoria y Distribuciones</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="estadística-teórica.html"><a href="estadística-teórica.html#variable-aleatoria-v.a.-x"><i class="fa fa-check"></i><b>3.2.1</b> Variable Aleatoria (v.a. = X)</a></li>
+<li class="chapter" data-level="3.2.2" data-path="estadística-teórica.html"><a href="estadística-teórica.html#distribuciones-discretas"><i class="fa fa-check"></i><b>3.2.2</b> Distribuciones Discretas</a></li>
+<li class="chapter" data-level="3.2.3" data-path="tema4.html"><a href="#distribuci%C3%B3n-normal-campana-de-gauss"><i class="fa fa-check"></i><b>3.2.3</b> Distribución Normal (Campana de Gauss)</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="tema4.html"><a href="#muestreo-teoremas-fundamentales-y-estimaci%C3%B3n"><i class="fa fa-check"></i><b>3.3</b> Muestreo, Teoremas Fundamentales y Estimación</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="tema4.html"><a href="#muestreo-e-inferencia-estad%C3%ADstica"><i class="fa fa-check"></i><b>3.3.1</b> Muestreo e Inferencia Estadística</a></li>
+<li class="chapter" data-level="3.3.2" data-path="estadística-teórica.html"><a href="estadística-teórica.html#distribuciones-muestrales"><i class="fa fa-check"></i><b>3.3.2</b> Distribuciones Muestrales</a></li>
+<li class="chapter" data-level="3.3.3" data-path="tema4.html"><a href="#ley-de-los-grandes-n%C3%BAmeros-lgn"><i class="fa fa-check"></i><b>3.3.3</b> Ley de los Grandes Números (LGN)</a></li>
+<li class="chapter" data-level="3.3.4" data-path="tema4.html"><a href="#teorema-del-l%C3%ADmite-central-tlc"><i class="fa fa-check"></i><b>3.3.4</b> Teorema del Límite Central (TLC)</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="tema4.html"><a href="#estimaci%C3%B3n-de-par%C3%A1metros"><i class="fa fa-check"></i><b>3.4</b> Estimación de Parámetros</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="tema4.html"><a href="#estimaci%C3%B3n-puntual-para-la-media"><i class="fa fa-check"></i><b>3.4.1</b> Estimación Puntual para la Media</a></li>
+<li class="chapter" data-level="3.4.2" data-path="tema4.html"><a href="#estimaci%C3%B3n-por-intervalo-de-confianza-ic-para-la-media"><i class="fa fa-check"></i><b>3.4.2</b> Estimación por Intervalo de Confianza (IC) para la Media</a></li>
+<li class="chapter" data-level="3.4.3" data-path="tema4.html"><a href="#pruebas-de-hip%C3%B3tesis"><i class="fa fa-check"></i><b>3.4.3</b> Pruebas de Hipótesis</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="tema4.html"><a href="#tama%C3%B1o-de-muestra"><i class="fa fa-check"></i><b>3.5</b> Tamaño de Muestra</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="tema4.html"><a href="#relevancia-de-la-aleatoriedad-y-el-equilibrio-log%C3%ADstico"><i class="fa fa-check"></i><b>3.5.1</b> Relevancia de la Aleatoriedad y el Equilibrio Logístico</a></li>
+<li class="chapter" data-level="3.5.2" data-path="tema4.html"><a href="#c%C3%A1lculo-para-fines-de-inferencia-descriptiva-margen-de-error"><i class="fa fa-check"></i><b>3.5.2</b> Cálculo para Fines de Inferencia Descriptiva (Margen de Error)</a></li>
+<li class="chapter" data-level="3.5.3" data-path="tema4.html"><a href="#c%C3%A1lculo-para-fines-de-inferencia-exploratoria-potencia"><i class="fa fa-check"></i><b>3.5.3</b> Cálculo para Fines de Inferencia Exploratoria (Potencia)</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="estadística-teórica.html"><a href="estadística-teórica.html#referencias-1"><i class="fa fa-check"></i><b>3.6</b> Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="tema4.html"><a href="#herramientas-estad%C3%ADsticas"><i class="fa fa-check"></i><b>4</b> Herramientas estadísticas</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="tema4.html"><a href="#an%C3%A1lisis-de-datos-categ%C3%B3ricos-prueba-chi2"><i class="fa fa-check"></i><b>4.1</b> Análisis de datos categóricos: prueba <span class="math inline">\(\chi^2\)</span></a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="herramientas-estadísticas.html"><a href="herramientas-estadísticas.html"><i class="fa fa-check"></i><b>4.1.1</b> Prueba de bondad de ajuste</a></li>
+<li class="chapter" data-level="4.1.2" data-path="herramientas-estadísticas.html"><a href="herramientas-estadísticas.html#prueba-de-independencia"><i class="fa fa-check"></i><b>4.1.2</b> Prueba de independencia</a></li>
+<li class="chapter" data-level="4.1.3" data-path="tema4.html"><a href="#consideraciones-y-recomendaciones-pr%C3%A1cticas"><i class="fa fa-check"></i><b>4.1.3</b> Consideraciones y recomendaciones prácticas</a></li>
+<li class="chapter" data-level="4.1.4" data-path="herramientas-estadísticas.html"><a href="herramientas-estadísticas.html#resumen-comparativo"><i class="fa fa-check"></i><b>4.1.4</b> Resumen comparativo</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="tema4.html"><a href="#comparaci%C3%B3n-de-dos-medias-pruebas-z-t-y-no-param%C3%A9tricas"><i class="fa fa-check"></i><b>4.2</b> Comparación de dos medias: pruebas z, t y no paramétricas</a></li>
+<li class="chapter" data-level="4.3" data-path="tema4.html"><a href="#correlaci%C3%B3n-y-regresi%C3%B3n-lineal"><i class="fa fa-check"></i><b>4.3</b> Correlación y regresión lineal</a></li>
+<li class="chapter" data-level="4.4" data-path="tema4.html"><a href="#comparar-varias-medias-anova-de-una-v%C3%ADa"><i class="fa fa-check"></i><b>4.4</b> Comparar varias medias: ANOVA de una vía</a></li>
+<li class="chapter" data-level="4.5" data-path="herramientas-estadísticas.html"><a href="herramientas-estadísticas.html#anova-factorial-y-ancova"><i class="fa fa-check"></i><b>4.5</b> ANOVA factorial y ANCOVA</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Psicoestadística</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="herramientas-estadísticas" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">4</span> Herramientas estadísticas<a href="#herramientas-estad%C3%ADsticas" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Recordar los pasos en las pruebas de hipótesis</p>
+<ol style="list-style-type: decimal">
+<li><strong>Formular Hipótesis (<span class="math inline">\(H_0\)</span> y <span class="math inline">\(H_a\)</span>)</strong></li>
+<li><strong>Establecer Nivel de Significación (<span class="math inline">\(\alpha\)</span>)</strong></li>
+<li><strong>Construir el Estadístico de Prueba</strong></li>
+<li><strong>Evaluar y Concluir</strong></li>
+</ol>
+<p>El <em>p</em>-valor es una medida que permite evaluar la evidencia en contra de una hipótesis nula. Representa la probabilidad de obtener un resultado tan extremo (o más) que el observado, asumiendo que la hipótesis nula es verdadera. Un <em>p</em>-valor pequeño indica que los datos son poco compatibles con la hipótesis nula y sugiere evidencia a favor de la alternativa.</p>
+<div id="análisis-de-datos-categóricos-prueba-chi2" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Análisis de datos categóricos: prueba <span class="math inline">\(\chi^2\)</span><a href="#an%C3%A1lisis-de-datos-categ%C3%B3ricos-prueba-chi2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Cuando las variables son <strong>categóricas</strong> (nominales u ordinales), la información se resume en términos de <strong>frecuencias</strong>.<br />
+La <strong>prueba chi-cuadrado (<span class="math inline">\(\chi^2\)</span>)</strong> permite evaluar si las frecuencias observadas difieren de las que esperaríamos bajo una hipótesis teórica.<br />
+Es una de las herramientas más utilizadas en psicología para analizar respuestas en categorías o preferencias <span class="citation">(Navarro, Foxcroft, and Faulkenberry 2025)</span>.</p>
+<div id="prueba-de-bondad-de-ajuste" class="section level3 hasAnchor" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Prueba de bondad de ajuste<a href="herramientas-estadísticas.html#prueba-de-bondad-de-ajuste" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Evalúa si las frecuencias observadas en una variable categórica <strong>se ajustan a un modelo teórico</strong> o distribución esperada.</p>
+<ul>
+<li>Hipótesis</li>
+</ul>
+<p><span class="math display">\[
+H_0: \text{Las frecuencias observadas se ajustan a las frecuencias esperadas.}\\
+H_1: \text{Las frecuencias observadas difieren significativamente de las esperadas.}
+\]</span></p>
+<ul>
+<li>Estadístico</li>
+</ul>
+<p><span class="math display">\[
+\chi^2_0 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(O_i\)</span>: frecuencia observada,<br />
+- <span class="math inline">\(E_i\)</span>: frecuencia esperada bajo <span class="math inline">\(H_0\)</span>,<br />
+- <span class="math inline">\(k\)</span>: número de categorías.</p>
+<p>Los <strong>grados de libertad</strong> se calculan como <span class="math inline">\(gl = k - 1\)</span>.<br />
+El valor de <span class="math inline">\(\chi^2\)</span> se compara con la distribución chi-cuadrado con esos grados de libertad.</p>
+<ul>
+<li>Decisión</li>
+</ul>
+<p>Se rechaza la H0 si:</p>
+<p><span class="math display">\[\chi^2_0&gt; \chi^2_{\alpha, k-1}\]</span></p>
+<div id="ejemplo" class="section level4 hasAnchor" number="4.1.1.1">
+<h4><span class="header-section-number">4.1.1.1</span> Ejemplo<a href="herramientas-estadísticas.html#ejemplo" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Un psicólogo evalúa si las preferencias por cuatro tipos de música (pop, rock, clásica, jazz) se distribuyen uniformemente.<br />
+Las frecuencias observadas son (30, 25, 20, 25) y las esperadas, si no hubiera preferencia, serían iguales (25 cada una):</p>
+<p><span class="math display">\[
+\chi^2 = \frac{(30-25)^2}{25} + \frac{(25-25)^2}{25} + \frac{(20-25)^2}{25} + \frac{(25-25)^2}{25} = 2
+\]</span></p>
+<p>Con <span class="math inline">\(gl = 3\)</span> y <span class="math inline">\(\alpha = 0.05\)</span>, el valor crítico es 7.815.<br />
+Como 2 &lt; 7.815, <strong>no se rechaza <span class="math inline">\(H_0\)</span></strong> → no hay evidencia de diferencia significativa en las preferencias.</p>
+<p>Usando el p-valor (JASP)</p>
+<p>Si <span class="math inline">\(p &lt; \alpha\)</span>, se concluye que las frecuencias <strong>no se ajustan</strong> al modelo teórico.<br />
+Si <span class="math inline">\(p \ge \alpha\)</span>, las diferencias observadas son compatibles con la hipótesis nula.<br />
+La prueba evalúa el <strong>grado de ajuste</strong>, no la dirección del efecto <span class="citation">(Navarro, Foxcroft, and Faulkenberry 2025)</span>.</p>
+</div>
+</div>
+<div id="prueba-de-independencia" class="section level3 hasAnchor" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> Prueba de independencia<a href="herramientas-estadísticas.html#prueba-de-independencia" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Evalúa si <strong>dos variables categóricas están asociadas</strong> o son <strong>independientes</strong>.<br />
+Se trabaja con una <strong>tabla de contingencia</strong> de tamaño <span class="math inline">\(r \times c\)</span>.</p>
+<ul>
+<li>Hipótesis</li>
+</ul>
+<p><span class="math display">\[
+H_0: \text{Las variables son independientes.}\\
+H_1: \text{Existe asociación entre las variables.}
+\]</span></p>
+<ul>
+<li>Estadístico de Prueba</li>
+</ul>
+<p><span class="math display">\[
+\chi^2_0 = \sum_{i=1}^{r}\sum_{j=1}^{c} \frac{(O_{ij} - E_{ij})^2}{E_{ij}}
+\]</span>
+Donde</p>
+<p><span class="math display">\[
+E_{ij} = \frac{(F_{i\cdot})(F_{\cdot j})}{n}
+\]</span></p>
+<p>donde <span class="math inline">\(F_{i\cdot}\)</span> y <span class="math inline">\(F_{\cdot j}\)</span> son los totales marginales por fila y columna, respectivamente, y <span class="math inline">\(n\)</span> es el total general.</p>
+<p>Los grados de libertad son: <span class="math inline">\(gl = (r-1)(c-1)\)</span></p>
+<ul>
+<li>Decisión</li>
+</ul>
+<p>Se rechaza H0 si:</p>
+<p><span class="math display">\[\chi^2_0&gt; \chi^2_{\alpha, (r-1)(c-1)}\]</span></p>
+<div id="ejemplo-1" class="section level4 hasAnchor" number="4.1.2.1">
+<h4><span class="header-section-number">4.1.2.1</span> Ejemplo<a href="herramientas-estadísticas.html#ejemplo-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Se evalúa si el <strong>género (hombre/mujer)</strong> está asociado con la <strong>preferencia de horario (mañana/tarde)</strong> en 100 estudiantes:</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="center">Mañana</th>
+<th align="center">Tarde</th>
+<th align="center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hombre</td>
+<td align="center">20</td>
+<td align="center">30</td>
+<td align="center">50</td>
+</tr>
+<tr class="even">
+<td>Mujer</td>
+<td align="center">10</td>
+<td align="center">40</td>
+<td align="center">50</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td align="center">30</td>
+<td align="center">70</td>
+<td align="center">100</td>
+</tr>
+</tbody>
+</table>
+<p>Frecuencia esperada para la celda (Hombre, Mañana):</p>
+<p><span class="math display">\[
+E_{11} = \frac{(50)(30)}{100} = 15
+\]</span></p>
+<p>El estadístico <span class="math inline">\(\chi^2\)</span> calculado es 6.67 con <span class="math inline">\(gl = 1\)</span>. El valor crítico a <span class="math inline">\(\alpha = 0.05\)</span> es 3.84 → <strong>se rechaza <span class="math inline">\(H_0\)</span></strong>, concluyendo que el género y la preferencia de horario están asociados.</p>
+</div>
+</div>
+<div id="consideraciones-y-recomendaciones-prácticas" class="section level3 hasAnchor" number="4.1.3">
+<h3><span class="header-section-number">4.1.3</span> Consideraciones y recomendaciones prácticas<a href="#consideraciones-y-recomendaciones-pr%C3%A1cticas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Cada frecuencia esperada debe ser al menos <strong>5</strong> para la validez de la prueba.<br />
+</li>
+<li>En tablas 2×2 puede aplicarse la <strong>corrección de continuidad de Yates</strong>.<br />
+</li>
+<li>Si hay celdas pequeñas, se puede usar la <strong>prueba exacta de Fisher</strong>.<br />
+</li>
+<li>La prueba <span class="math inline">\(\chi^2\)</span> <strong>no indica la magnitud de la asociación</strong>, solo su existencia.<br />
+</li>
+<li>Para cuantificarla, se pueden usar medidas derivadas como el <strong>V de Cramer</strong> o el <strong>coeficiente de contingencia (C)</strong>.</li>
+</ul>
+<p><em>Ejemplo interpretativo:</em><br />
+En un estudio sobre estilos de afrontamiento y género, se obtiene <span class="math inline">\(\chi^2(2) = 10.5\)</span>, p &lt; .01.<br />
+Esto sugiere una relación significativa entre el género y el estilo de afrontamiento.</p>
+<hr />
+</div>
+<div id="resumen-comparativo" class="section level3 hasAnchor" number="4.1.4">
+<h3><span class="header-section-number">4.1.4</span> Resumen comparativo<a href="herramientas-estadísticas.html#resumen-comparativo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<colgroup>
+<col width="23%" />
+<col width="30%" />
+<col width="19%" />
+<col width="15%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo de prueba</th>
+<th>Propósito principal</th>
+<th>Hipótesis nula (<span class="math inline">\(H_0\)</span>)</th>
+<th>Grados de libertad</th>
+<th>Ejemplo típico</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Bondad de ajuste</strong></td>
+<td>Contrastar una distribución observada con una esperada</td>
+<td>Los datos siguen la distribución teórica</td>
+<td><span class="math inline">\(k - 1\)</span></td>
+<td>Preferencia por tipos de música</td>
+</tr>
+<tr class="even">
+<td><strong>Independencia</strong></td>
+<td>Evaluar asociación entre dos variables categóricas</td>
+<td>Las variables son independientes</td>
+<td><span class="math inline">\((r-1)(c-1)\)</span></td>
+<td>Asociación entre género y estilo de afrontamiento</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>La prueba <span class="math inline">\(\chi^2\)</span> es una herramienta flexible y esencial para el análisis de datos categóricos.<br />
+Su interpretación debe complementarse con medidas de tamaño del efecto y con la inspección de las tablas de contingencia <span class="citation">(Navarro, Foxcroft, and Faulkenberry 2025; Moore, McCabe, and Craig 2013)</span>.</p>
+</blockquote>
+</div>
+</div>
+<div id="comparación-de-dos-medias-pruebas-z-t-y-no-paramétricas" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Comparación de dos medias: pruebas z, t y no paramétricas<a href="#comparaci%C3%B3n-de-dos-medias-pruebas-z-t-y-no-param%C3%A9tricas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="correlación-y-regresión-lineal" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Correlación y regresión lineal<a href="#correlaci%C3%B3n-y-regresi%C3%B3n-lineal" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="comparar-varias-medias-anova-de-una-vía" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Comparar varias medias: ANOVA de una vía<a href="#comparar-varias-medias-anova-de-una-v%C3%ADa" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="anova-factorial-y-ancova" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> ANOVA factorial y ANCOVA<a href="herramientas-estadísticas.html#anova-factorial-y-ancova" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div class="csl-entry">
+Agresti, Alan, and Barbara Finlay. 2018. <em>Statistical Methods for the Social Sciences</em>. 5th ed. Boston: Pearson.
+</div>
+<div class="csl-entry">
+Cohen, Jacob. 1994. <span>“The Earth Is Round (p &lt; .05).”</span> <em>American Psychologist</em> 49 (12): 997–1003.
+</div>
+<div class="csl-entry">
+Feller, William. 1968. <em>An Introduction to Probability Theory and Its Applications</em>. 3rd ed. New York: John Wiley &amp; Sons.
+</div>
+<div class="csl-entry">
+Gelman, Andrew, and Deborah Nolan. 2017. <em>Teaching Statistics: A Bag of Tricks</em>. 2nd ed. Oxford: Oxford University Press.
+</div>
+<div class="csl-entry">
+Groves, Robert M., Floyd J. Fowler, Mick P. Couper, James M. Lepkowski, Eleanor Singer, and Roger Tourangeau. 2009. <em>Survey Methodology</em>. 2nd ed. Hoboken, NJ: Wiley.
+</div>
+<div class="csl-entry">
+Kish, Leslie. 1995. <em>Survey Sampling</em>. New York: John Wiley &amp; Sons.
+</div>
+<div class="csl-entry">
+Montgomery, Douglas C., and George C. Runger. 2014. <em>Applied Statistics and Probability for Engineers</em>. 6th ed. Hoboken, NJ: John Wiley &amp; Sons.
+</div>
+<div class="csl-entry">
+Moore, David S., George P. McCabe, and Bruce A. Craig. 2013. <em>Introduction to the Practice of Statistics</em>. 7th ed. New York: W. H. Freeman.
+</div>
+<div class="csl-entry">
+Navarro, Danielle J., David R. Foxcroft, and Thomas J. Faulkenberry. 2025. <span>“Learning Statistics with JASP: A Tutorial for Psychology Students and Other Beginners.”</span> <a href="https://learnstatswithjasp.com">https://learnstatswithjasp.com</a>.
+</div>
+<div class="csl-entry">
+Shadish, William R., Thomas D. Cook, and Donald T. Campbell. 2002. <em>Experimental and Quasi-Experimental Designs for Generalized Causal Inference</em>. Boston: Houghton Mifflin.
+</div>
+<div class="csl-entry">
+Stevens, S. S. 1946. <span>“On the Theory of Scales of Measurement.”</span> <em>Science</em> 103 (2684): 677–80.
+</div>
+<div class="csl-entry">
+Wackerly, Dennis D., William Mendenhall, and Richard L. Scheaffer. 2008. <em>Mathematical Statistics with Applications</em>. 7th ed. Belmont, CA: Thomson Brooks/Cole.
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="estadística-teórica.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
