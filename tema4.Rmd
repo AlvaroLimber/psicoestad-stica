@@ -142,6 +142,17 @@ Esto sugiere una relación significativa entre el género y el estilo de afronta
 > Su interpretación debe complementarse con medidas de tamaño del efecto y con la inspección de las tablas de contingencia [@LSJ2025; @Moore2013].
 
 
+> Nota: Cramér's V
+
+Mide el nivel de asociación entre dos variables cualitativas.
+
+$$V=\sqrt{\frac{\chi^2_0}{n*(k-1)}}$$
+
+Donde $k$ es el mínimo entre el número de clases de la variable fila y la variable columna. Sobre la lectura:
+
+  - Si $V\rightarrow 0$ Asociación débil
+  - Si $V\rightarrow 1$ Asociación fuerte
+
 ## Comparación de dos medias: pruebas z, t y no paramétricas
 
 ## Correlación y regresión lineal 
