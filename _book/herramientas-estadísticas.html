@@ -23,7 +23,7 @@
 <meta name="author" content="MSc. Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2025-10-30" />
+<meta name="date" content="2025-11-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -184,7 +184,14 @@ div.csl-indent {
 <li class="chapter" data-level="4.1.3" data-path="tema4.html"><a href="#consideraciones-y-recomendaciones-pr%C3%A1cticas"><i class="fa fa-check"></i><b>4.1.3</b> Consideraciones y recomendaciones prácticas</a></li>
 <li class="chapter" data-level="4.1.4" data-path="herramientas-estadísticas.html"><a href="herramientas-estadísticas.html#resumen-comparativo"><i class="fa fa-check"></i><b>4.1.4</b> Resumen comparativo</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="tema4.html"><a href="#comparaci%C3%B3n-de-dos-medias-pruebas-z-t-y-no-param%C3%A9tricas"><i class="fa fa-check"></i><b>4.2</b> Comparación de dos medias: pruebas z, t y no paramétricas</a></li>
+<li class="chapter" data-level="4.2" data-path="tema4.html"><a href="#comparaci%C3%B3n-de-dos-medias-pruebas-z-t-y-no-param%C3%A9tricas"><i class="fa fa-check"></i><b>4.2</b> Comparación de dos medias: pruebas z, t y no paramétricas</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="tema4.html"><a href="#prueba-z-para-dos-medias-caso-te%C3%B3rico"><i class="fa fa-check"></i><b>4.2.1</b> Prueba z para dos medias (caso teórico)</a></li>
+<li class="chapter" data-level="4.2.2" data-path="herramientas-estadísticas.html"><a href="herramientas-estadísticas.html#prueba-t-para-dos-medias"><i class="fa fa-check"></i><b>4.2.2</b> Prueba t para dos medias</a></li>
+<li class="chapter" data-level="4.2.3" data-path="herramientas-estadísticas.html"><a href="herramientas-estadísticas.html#supuestos-de-las-pruebas-t"><i class="fa fa-check"></i><b>4.2.3</b> Supuestos de las pruebas t</a></li>
+<li class="chapter" data-level="4.2.4" data-path="tema4.html"><a href="#pruebas-no-param%C3%A9tricas-equivalentes"><i class="fa fa-check"></i><b>4.2.4</b> Pruebas no paramétricas equivalentes</a></li>
+<li class="chapter" data-level="4.2.5" data-path="tema4.html"><a href="#interpretaci%C3%B3n-y-tama%C3%B1o-del-efecto"><i class="fa fa-check"></i><b>4.2.5</b> Interpretación y tamaño del efecto</a></li>
+</ul></li>
 <li class="chapter" data-level="4.3" data-path="tema4.html"><a href="#correlaci%C3%B3n-y-regresi%C3%B3n-lineal"><i class="fa fa-check"></i><b>4.3</b> Correlación y regresión lineal</a></li>
 <li class="chapter" data-level="4.4" data-path="tema4.html"><a href="#comparar-varias-medias-anova-de-una-v%C3%ADa"><i class="fa fa-check"></i><b>4.4</b> Comparar varias medias: ANOVA de una vía</a></li>
 <li class="chapter" data-level="4.5" data-path="herramientas-estadísticas.html"><a href="herramientas-estadísticas.html#anova-factorial-y-ancova"><i class="fa fa-check"></i><b>4.5</b> ANOVA factorial y ANCOVA</a></li>
@@ -404,6 +411,199 @@ Su interpretación debe complementarse con medidas de tamaño del efecto y con l
 </div>
 <div id="comparación-de-dos-medias-pruebas-z-t-y-no-paramétricas" class="section level2 hasAnchor" number="4.2">
 <h2><span class="header-section-number">4.2</span> Comparación de dos medias: pruebas z, t y no paramétricas<a href="#comparaci%C3%B3n-de-dos-medias-pruebas-z-t-y-no-param%C3%A9tricas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>En investigación psicológica y social es común comparar <strong>las medias de dos grupos</strong> o condiciones (por ejemplo, comparar niveles de ansiedad entre hombres y mujeres, o antes y después de una intervención).<br />
+El objetivo es determinar si las diferencias observadas reflejan una diferencia real en la población o son producto del azar <span class="citation">(Navarro, Foxcroft, and Faulkenberry 2025; Moore, McCabe, and Craig 2013)</span>.</p>
+<p>Las tres pruebas más comunes son:</p>
+<ol style="list-style-type: decimal">
+<li><strong>z-test</strong> → cuando se conoce la varianza poblacional (caso teórico).<br />
+</li>
+<li><strong>t-test</strong> → cuando la varianza poblacional es desconocida (caso real).<br />
+</li>
+<li><strong>Pruebas no paramétricas</strong> → cuando los datos no cumplen los supuestos de normalidad o escala de intervalo.</li>
+</ol>
+<div id="prueba-z-para-dos-medias-caso-teórico" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Prueba z para dos medias (caso teórico)<a href="#prueba-z-para-dos-medias-caso-te%C3%B3rico" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Se aplica cuando:
+- la variable es cuantitativa continua,<br />
+- las observaciones son independientes,<br />
+- y se <strong>conocen las desviaciones estándar poblacionales</strong>.</p>
+<div id="hipótesis" class="section level4 hasAnchor" number="4.2.1.1">
+<h4><span class="header-section-number">4.2.1.1</span> Hipótesis<a href="#hip%C3%B3tesis" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><span class="math display">\[
+H_0: \mu_1 = \mu_2\\
+H_1: \mu_1 \neq \mu_2
+\]</span></p>
+</div>
+<div id="estadístico" class="section level4 hasAnchor" number="4.2.1.2">
+<h4><span class="header-section-number">4.2.1.2</span> Estadístico<a href="#estad%C3%ADstico" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><span class="math display">\[
+z_0 = \frac{(\bar{X}_1 - \bar{X}_2)}{\sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}}
+\]</span></p>
+<p>El estadístico <span class="math inline">\(z_0\)</span> sigue una distribución normal estándar <span class="math inline">\(N(0,1)\)</span>.</p>
+</div>
+<div id="ejemplo-2" class="section level4 hasAnchor" number="4.2.1.3">
+<h4><span class="header-section-number">4.2.1.3</span> Ejemplo<a href="herramientas-estadísticas.html#ejemplo-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Un investigador quiere comparar los tiempos de reacción de dos grupos de participantes en una tarea cognitiva.<br />
+Si las medias son 520 ms y 540 ms, con desviaciones poblacionales conocidas de 50 y 60 ms, y n=30 por grupo:</p>
+<p><span class="math display">\[
+z_0 = \frac{520 - 540}{\sqrt{\frac{50^2}{30} + \frac{60^2}{30}}} = -1.44
+\]</span></p>
+<p>Como <span class="math inline">\(|z_0| = 1.44 &lt; 1.96\)</span>, <strong>no se rechaza <span class="math inline">\(H_0\)</span></strong> (no hay evidencia suficiente de diferencia significativa).</p>
+</div>
+</div>
+<div id="prueba-t-para-dos-medias" class="section level3 hasAnchor" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Prueba t para dos medias<a href="herramientas-estadísticas.html#prueba-t-para-dos-medias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>En la práctica, las varianzas poblacionales <strong>no son conocidas</strong>, por lo que se emplea la <strong>distribución t de Student</strong>.<br />
+Existen dos tipos principales:</p>
+<ol style="list-style-type: decimal">
+<li><strong>t para muestras independientes</strong><br />
+</li>
+<li><strong>t para muestras relacionadas (dependientes o pareadas)</strong></li>
+</ol>
+<div id="t-para-muestras-independientes" class="section level4 hasAnchor" number="4.2.2.1">
+<h4><span class="header-section-number">4.2.2.1</span> 1. t para muestras independientes<a href="herramientas-estadísticas.html#t-para-muestras-independientes" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Se aplica cuando se comparan dos grupos distintos.</p>
+<p><strong>Hipótesis:</strong></p>
+<p><span class="math display">\[
+H_0: \mu_1 = \mu_2 \quad \text{vs.} \quad H_1: \mu_1 \neq \mu_2
+\]</span></p>
+<p><strong>Estadístico:</strong></p>
+<p><span class="math display">\[
+t = \frac{(\bar{X}_1 - \bar{X}_2)}{s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}}
+\]</span></p>
+<p>donde <span class="math inline">\(s_p\)</span> es la <strong>desviación estándar combinada</strong>:</p>
+<p><span class="math display">\[
+s_p = \sqrt{\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1 + n_2 - 2}}
+\]</span></p>
+<p><strong>Grados de libertad:</strong> <span class="math inline">\(gl = n_1 + n_2 - 2\)</span></p>
+<p><strong>Ejemplo:</strong></p>
+<p>En un estudio sobre estrés académico, dos grupos de estudiantes (n=25 cada uno) obtienen medias de 35.4 y 40.1 puntos, con desviaciones estándar de 8.2 y 7.6.</p>
+<p><span class="math display">\[
+t = \frac{35.4 - 40.1}{\sqrt{\frac{(8.2^2 + 7.6^2)}{2} \cdot (\frac{1}{25} + \frac{1}{25})}} = -2.13
+\]</span></p>
+<p>Con <span class="math inline">\(gl = 48\)</span> y <span class="math inline">\(\alpha = 0.05\)</span>, el valor crítico es ±2.01 →<br />
+<strong>se rechaza <span class="math inline">\(H_0\)</span></strong> → diferencia significativa de estrés entre grupos.</p>
+</div>
+<div id="t-para-muestras-relacionadas" class="section level4 hasAnchor" number="4.2.2.2">
+<h4><span class="header-section-number">4.2.2.2</span> 2. t para muestras relacionadas<a href="herramientas-estadísticas.html#t-para-muestras-relacionadas" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Se aplica cuando las observaciones provienen de los <strong>mismos participantes</strong> medidos dos veces (pretest–postest, condiciones A/B).</p>
+<p><strong>Hipótesis:</strong></p>
+<p><span class="math display">\[
+H_0: \mu_D = 0
+\]</span></p>
+<p>donde <span class="math inline">\(\mu_D\)</span> es la media de las diferencias.</p>
+<p><strong>Estadístico:</strong></p>
+<p><span class="math display">\[
+t = \frac{\bar{D}}{s_D / \sqrt{n}}
+\]</span></p>
+<p><strong>Ejemplo:</strong></p>
+<p>Un grupo de 20 personas completa un test de ansiedad antes y después de una intervención.<br />
+La media de las diferencias (pre–post) es 4.2 con <span class="math inline">\(s_D = 6.0\)</span>.</p>
+<p><span class="math display">\[
+t = \frac{4.2}{6.0/\sqrt{20}} = 3.13
+\]</span></p>
+<p>Con <span class="math inline">\(gl = 19\)</span>, el valor crítico a <span class="math inline">\(\alpha = 0.05\)</span> (bilateral) es 2.09 →<br />
+<strong>se rechaza <span class="math inline">\(H_0\)</span></strong>, indicando una reducción significativa en ansiedad.</p>
+</div>
+</div>
+<div id="supuestos-de-las-pruebas-t" class="section level3 hasAnchor" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> Supuestos de las pruebas t<a href="herramientas-estadísticas.html#supuestos-de-las-pruebas-t" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Escala de intervalo o razón.<br />
+</li>
+<li>Normalidad de la variable en cada grupo.<br />
+</li>
+<li>Homogeneidad de varianzas (para muestras independientes).<br />
+</li>
+<li>Independencia entre observaciones.</li>
+</ul>
+<p>Cuando alguno de estos supuestos no se cumple, se recurre a pruebas <strong>no paramétricas</strong>.</p>
+</div>
+<div id="pruebas-no-paramétricas-equivalentes" class="section level3 hasAnchor" number="4.2.4">
+<h3><span class="header-section-number">4.2.4</span> Pruebas no paramétricas equivalentes<a href="#pruebas-no-param%C3%A9tricas-equivalentes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Las pruebas no paramétricas no requieren normalidad ni homocedasticidad, y se aplican sobre rangos o signos.</p>
+<table>
+<colgroup>
+<col width="22%" />
+<col width="20%" />
+<col width="24%" />
+<col width="10%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Tipo de comparación</th>
+<th align="center">Prueba paramétrica</th>
+<th align="center">Prueba no paramétrica</th>
+<th align="left">Variable</th>
+<th align="left">Ejemplo psicológico</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">Dos grupos independientes</td>
+<td align="center">t de Student</td>
+<td align="center">Mann–Whitney U</td>
+<td align="left">Ordinal / No normal</td>
+<td align="left">Comparar puntajes de ansiedad entre grupos experimentales</td>
+</tr>
+<tr class="even">
+<td align="right">Dos grupos relacionados</td>
+<td align="center">t pareada</td>
+<td align="center">Wilcoxon de rangos con signo</td>
+<td align="left">Ordinal / No normal</td>
+<td align="left">Evaluar cambio pre–post en autoeficacia</td>
+</tr>
+</tbody>
+</table>
+<p><em>Ejemplo:</em><br />
+En un estudio sobre satisfacción laboral antes y después de una capacitación (escala ordinal), se aplica la <strong>prueba de Wilcoxon</strong>:<br />
+<span class="math inline">\(W = 15\)</span>, p = .02 → diferencia significativa entre las mediciones.</p>
+</div>
+<div id="interpretación-y-tamaño-del-efecto" class="section level3 hasAnchor" number="4.2.5">
+<h3><span class="header-section-number">4.2.5</span> Interpretación y tamaño del efecto<a href="#interpretaci%C3%B3n-y-tama%C3%B1o-del-efecto" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>La significación estadística indica si la diferencia es real,<br />
+pero <strong>no informa sobre su magnitud</strong>.<br />
+Por ello se recomienda reportar siempre el <strong>tamaño del efecto</strong>.</p>
+<div id="d-de-cohen" class="section level4 hasAnchor" number="4.2.5.1">
+<h4><span class="header-section-number">4.2.5.1</span> d de Cohen<a href="herramientas-estadísticas.html#d-de-cohen" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><span class="math display">\[
+d = \frac{\bar{X}_1 - \bar{X}_2}{s_p}
+\]</span></p>
+<p>Interpretación general <span class="citation">(Cohen 1994)</span>:</p>
+<table>
+<thead>
+<tr class="header">
+<th>d</th>
+<th>Magnitud del efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0.2</td>
+<td>Pequeño</td>
+</tr>
+<tr class="even">
+<td>0.5</td>
+<td>Mediano</td>
+</tr>
+<tr class="odd">
+<td>0.8</td>
+<td>Grande</td>
+</tr>
+</tbody>
+</table>
+<p><em>Ejemplo:</em><br />
+Si <span class="math inline">\(\bar{X}_1 - \bar{X}_2 = 5\)</span> y <span class="math inline">\(s_p = 10\)</span>, entonces <span class="math inline">\(d = 0.5\)</span> → efecto <strong>moderado</strong>.</p>
+<blockquote>
+<p>Notas:</p>
+</blockquote>
+<blockquote>
+<p>Las pruebas z, t y sus equivalentes no paramétricas permiten contrastar diferencias entre medias bajo distintos supuestos.<br />
+En psicología y ciencias sociales, su interpretación debe acompañarse del <strong>p-valor</strong>, el <strong>tamaño del efecto (d)</strong> y, cuando sea posible, un <strong>intervalo de confianza</strong> para la diferencia <span class="citation">(Navarro, Foxcroft, and Faulkenberry 2025; Cohen 1994)</span>.</p>
+</blockquote>
+</div>
+</div>
 </div>
 <div id="correlación-y-regresión-lineal" class="section level2 hasAnchor" number="4.3">
 <h2><span class="header-section-number">4.3</span> Correlación y regresión lineal<a href="#correlaci%C3%B3n-y-regresi%C3%B3n-lineal" class="anchor-section" aria-label="Anchor link to header"></a></h2>

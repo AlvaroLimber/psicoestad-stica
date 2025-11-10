@@ -72,6 +72,17 @@ ejemplo-1
 consideraciones-y-recomendaciones-prácticas
 resumen-comparativo
 comparación-de-dos-medias-pruebas-z-t-y-no-paramétricas
+prueba-z-para-dos-medias-caso-teórico
+hipótesis
+estadístico
+ejemplo-2
+prueba-t-para-dos-medias
+t-para-muestras-independientes
+t-para-muestras-relacionadas
+supuestos-de-las-pruebas-t
+pruebas-no-paramétricas-equivalentes
+interpretación-y-tamaño-del-efecto
+d-de-cohen
 correlación-y-regresión-lineal
 comparar-varias-medias-anova-de-una-vía
 anova-factorial-y-ancova
