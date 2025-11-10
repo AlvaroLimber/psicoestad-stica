@@ -207,7 +207,7 @@ Existen dos tipos principales:
 2. **t para muestras relacionadas (dependientes o pareadas)**
 
 
-#### 1. t para muestras independientes
+#### t para muestras independientes
 
 Se aplica cuando se comparan dos grupos distintos.
 
@@ -242,7 +242,7 @@ t = \frac{35.4 - 40.1}{\sqrt{\frac{(8.2^2 + 7.6^2)}{2} \cdot (\frac{1}{25} + \fr
 Con \(gl = 48\) y $\alpha = 0.05$, el valor crítico es ±2.01 →  
 **se rechaza $H_0$** → diferencia significativa de estrés entre grupos.
 
-#### 2. t para muestras relacionadas
+#### t para muestras relacionadas
 
 Se aplica cuando las observaciones provienen de los **mismos participantes** medidos dos veces (pretest–postest, condiciones A/B).
 
