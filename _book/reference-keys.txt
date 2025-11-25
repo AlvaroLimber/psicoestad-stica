@@ -95,11 +95,3 @@ lógica-del-anova
 ejemplo-3
 pruebas-post-hoc
 supuestos
-anova-factorial-y-ancova
-anova-factorial
-ejemplo-factorial-22
-ancova
-modelo-general
-ejemplo-típico-en-psicología
-supuestos-adicionales-del-ancova
-tamaños-del-efecto-recomendados

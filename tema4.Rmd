@@ -425,8 +425,6 @@ H_0: \mu_1 = \mu_2 = \ldots = \mu_k
 H_1: \text{Al menos una media difiere}
 \]
 
----
-
 ### Lógica del ANOVA
 
 ANOVA compara:
@@ -441,8 +439,6 @@ F = \frac{\text{MS}_{\text{entre}}}{\text{MS}_{\text{dentro}}}
 
 Si F es grande → evidencia contra \(H_0\).
 
----
-
 ### Ejemplo
 
 Tres métodos de relajación se comparan en 60 participantes.  
@@ -454,8 +450,6 @@ ANOVA arroja:
 
 Esto indica que **los métodos difieren en su efecto sobre el nivel de estrés**.
 
----
-
 ### Pruebas post hoc
 
 Si el ANOVA es significativo:
@@ -466,118 +460,8 @@ Si el ANOVA es significativo:
 
 Permiten identificar **qué grupos difieren entre sí**.
 
----
-
 ### Supuestos
 
 - Independencia  
 - Normalidad dentro de cada grupo  
 - Homogeneidad de varianzas (Levene)
-
----
-
----
-
-## ANOVA factorial y ANCOVA
-
-Estos modelos amplían el ANOVA de una vía para incluir **más de un factor** o **covariables**.
-
----
-
-### ANOVA factorial
-
-Incluye dos o más factores categóricos.  
-Permite estudiar:
-
-1. **Efectos principales** de cada factor  
-2. **Interacción** entre factores  
-
-Una interacción implica que **el efecto de un factor depende del nivel del otro**.
-
----
-
-### Ejemplo factorial 2×2
-
-Factores:
-
-- Tipo de terapia (A/B)  
-- Género (H/M)  
-
-Resultados:
-
-- Efecto principal de terapia: p = .03  
-- Efecto principal de género: p = .40  
-- Interacción: p = .01  
-
-Interpretación:  
-La terapia es más eficaz **solo en mujeres**, indicando interacción significativa.
-
----
-
-### ANCOVA
-
-El ANCOVA (Análisis de Covarianza) combina:
-
-- factor(es) categórico(s) → como en ANOVA  
-- covariable(s) cuantitativa(s)
-
-Objetivo:
-
-- **Controlar una variable cuantitativa que afecta al resultado**,  
-- aumentando la precisión del análisis.
-
----
-
-### Modelo general
-
-\[
-Y = \mu + \tau_i + \beta X + \epsilon
-\]
-
-Donde:
-
-- \(\tau_i\): efecto del grupo  
-- \(X\): covariable  
-- \(\beta\): efecto ajustador
-
----
-
-### Ejemplo típico en psicología
-
-Evaluar el efecto de tres terapias en ansiedad, **ajustando por nivel inicial de ansiedad (pretest)**.
-
-Resultados:
-
-- ANOVA simple → no significativo  
-- ANCOVA ajustado por pretest → p = .02  
-
-Interpretación:  
-Los grupos **sí difieren**, pero solo después de controlar la ansiedad basal.
-
----
-
-### Supuestos adicionales del ANCOVA
-
-- Linealidad entre Y y covariable  
-- Homogeneidad de pendientes (no interacción grupo × covariable)  
-- Independencia entre la covariable y el tratamiento
-
----
-
-### Tamaños del efecto recomendados
-
-- η² (eta cuadrado)  
-- η² parcial  
-- R² para modelos con covariables  
-
-Valores guía (Cohen 1994):
-
-| η² | Magnitud |
-|----|----------|
-| 0.01 | Pequeño |
-| 0.06 | Mediano |
-| 0.14 | Grande |
-
----
-
-> En conjunto, ANOVA de una vía, ANOVA factorial y ANCOVA permiten estudiar diferencias de medias bajo distintos diseños y estructuras de variables, siguiendo los principios explicados en @LSJ2025 y la lógica clásica de modelos lineales aplicados a psicología y ciencias sociales.

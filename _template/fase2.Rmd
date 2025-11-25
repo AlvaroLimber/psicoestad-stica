@@ -1,0 +1,137 @@
+---
+title: "Proyecto – Fase 2"
+subtitle: "Psicoestadística"
+author: "Nombre del grupo:"
+date: "Noviembre, 2025"
+fontsize: 12pt
+linestretch: 1
+geometry: margin=2.5cm
+output: 
+  pdf_document:
+    number_sections: TRUE
+---
+
+**Integrantes:**  
+**Constructo psicológico evaluado:**  
+
+# Ficha técnica del estudio (Metadatos)
+
+**Título del estudio:**  
+**Objetivo general:**  
+**Población objetivo:**  
+**Método de recolección:** 
+**Fechas de levantamiento:**  
+**Tamaño de muestra final:**  
+**Instrumento utilizado:** (incluir referencia de la escala)  
+**URL o ID del formulario Kobo:**  
+**Variables principales:**  
+**Responsables:**  
+**Descripción breve del dataset (máx. 5 líneas):**
+
+# Diccionario de datos 
+
+Debe tener correspondencia con su base de datos en excel.
+
+| Variable | Tipo | Descripción | Valores / Rango | Observaciones |
+|----------|-----------------|-------------|------------------|----------------|
+| edad     | Cuantitativa  | Edad del participante | 18–60 | — |
+| sexo     | Cualitativa-Nominal  | Sexo reportado | 1: Hombre, 2: Mujer | — |
+| item1    | Cualitativa-Ordinal  | Ítem de escala | 1–5 Likert | invertido: No |
+
+*(Pueden agregar filas según su base.)*
+
+# Preprocesamiento y depuración del dataset
+Describir brevemente las decisiones tomadas sobre la base de datos.
+
+## Revisión de calidad
+
+- Valores atípicos detectados:  
+- Manejo de datos faltantes:  
+- Correcciones de codificación:  
+- Registros eliminados o modificados:  
+
+## Transformaciones aplicadas
+
+- Recodificaciones realizadas:  
+- Variables nuevas creadas:  
+- Ítems invertidos (si corresponde):  
+- Puntajes totales y subescalas:  
+
+## Consistencia interna del instrumento (Opcional)
+
+- Estadístico utilizado: Alfa de Cronbach  
+- Resultado:  
+- Interpretación (2–3 líneas):  
+
+# Herramientas estadísticas aplicadas (mínimo 3)
+
+Para cada técnica aplicada:
+
+## Técnica 1
+
+- Prueba utilizada:  
+- Variables involucradas:  
+- Resultado del software (JASP):  
+- Interpretación estadística (p, estadístico, IC):  
+- Interpretación sustantiva (3–4 líneas):  
+
+## Técnica 2
+
+(igual formato)
+
+## Técnica 3
+
+(igual formato)
+
+# Discusión y análisis integrador
+
+Síntesis breve:
+
+- Hallazgos principales.  
+- Coherencia con literatura sobre el constructo.  
+- Limitaciones del estudio (breve).  
+- Implicaciones psicológicas/metodológicas.  
+
+# Conclusiones
+
+Máximo 4–5 puntos:
+
+- Principales resultados.  
+- Aportes al análisis del constructo.  
+- Aspectos a mejorar en la Fase 3.  
+
+
+# Referencias
+
+Solo las utilizadas:  
+
+- Escalas  
+- Artículos del constructo  
+- Justificación de técnicas estadísticas  
+
+Ejemplo:
+
+Rosenberg, M. (1965). *Society and the adolescent self-image.* Princeton University Press.
+Diener, E., Emmons, R. A., Larsen, R. J., & Griffin, S. (1985). The Satisfaction With Life Scale. *Journal of Personality Assessment, 49*(1), 71–75. https://doi.org/10.1207/s15327752jpa4901_13
+
+# Anexos
+
+- Base depurada (excel)
+
+# RÚBRICA DE EVALUACIÓN (Cumple / No cumple)
+
+La rúbrica que se usara para la revisión es:
+
+| Criterio | Cumple | No cumple |
+|---------|--------|-----------|
+| Ficha técnica completa y clara |  |  |
+| Diccionario de datos coherente y limpio |  |  |
+| Preprocesamiento bien documentado |  |  |
+| Evaluación de consistencia interna |  |  |
+| Aplicación de **al menos 3** técnicas estadísticas |  |  |
+| Interpretación correcta y clara |  |  |
+| Discusión integrada y pertinente |  |  |
+| Conclusiones alineadas con resultados |  |  |
+| Referencias adecuadas |  |  |
+| Entrega ordenada y formato adecuado |  |  |
+
