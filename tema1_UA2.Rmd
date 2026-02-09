@@ -52,6 +52,8 @@ Donde $N$ es el tamaño del universo o la PO. Es el **conjunto total de elemento
   *Ejemplo:* Observación del uso de redes sociales y su asociación con bienestar.
 - **Registro administrativo:** datos reunidos por instituciones en el curso de sus funciones.  
   *Ejemplo:* Historias clínicas o registros de atención psicológica.
+  
+> Nota: Estos pueden ser de fuente primaria (se es parte de la recolección) o secundaria (se recurre a datos ya existentes en algún lado)
 
 ## Enfoques para el análisis
 
@@ -88,7 +90,6 @@ Donde $N$ es el tamaño del universo o la PO. Es el **conjunto total de elemento
 - **Validez externa:** se refiere a la **capacidad de generalizar** los resultados más allá de las condiciones del estudio, hacia otras poblaciones, contextos o momentos en el tiempo.  
   Depende de la representatividad de la muestra, de la cobertura geográfica y temporal, y de la similitud entre el contexto del estudio y el contexto al que se quiere generalizar [@Kish1995; @Shadish2002].  
   *Ejemplo:* Un estudio representativo a nivel nacional sobre depresión en adolescentes que permite inferir resultados para toda la población adolescente del país.
-
 
 ### Fuentes de información × Tipos de validez
 
