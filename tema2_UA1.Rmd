@@ -68,14 +68,19 @@ En grupos, utilicen sus calculadoras para analizar el nivel de **Estrés Percibi
 
 El grupo típico: Calculen la media de estrés de estos 5 estudiantes:
 
-**Estudiante A:** 45 pts | **Estudiante B:** 52 pts | **Estudiante C:** 48 pts | **Estudiante D:** 50 pts | **Estudiante E:** 47 pts
+* **Estudiante A:** 45 pts 
+* **Estudiante B:** 52 pts 
+* **Estudiante C:** 48 pts 
+* **Estudiante D:** 50 pts 
+* **Estudiante E:** 47 pts
 
 1. Suma total ($\sum X_i$): ________
 2. Media ($\bar{X}_1$): ________
 
-El impacto del Outlier (Valor Extremo): Imagina que un sexto estudiante llega al aula. Ha tenido un accidente menor en el "Teleférico" y llega en crisis, con un puntaje de estrés de **98 pts**.
+El impacto del Outlier (Valor Extremo): Imagina que un sexto estudiante llega al aula. Ha tenido un accidente menor en el "Teleférico" y llega en crisis, con un puntaje de estrés de *98 pts*.
 
 Calculen la nueva media para el grupo ($N=6$):
+
 1. Nueva suma: ________
 2. Nueva media ($\bar{X}_2$): ________ 
 
