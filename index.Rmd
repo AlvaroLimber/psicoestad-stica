@@ -5,7 +5,9 @@ author: "MSc. Alvaro Chirino Gutierrez"
 description: "Este libro esta destinado a la materia de Psicoestadística de la carrera de Psicología de la Universidad Católica Boliviana, sede La Paz."
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output: 
+  bookdown::gitbook:
+    css: style.css
 documentclass: book
 graphics: yes
 github-repo: alvarolimber/

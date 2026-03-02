@@ -13,8 +13,6 @@ El enfoque más común es el **enfoque tabular**, que dispone la información en
 
 *Ejemplo:* en un cuestionario aplicado a 5 estudiantes, las filas representan a cada estudiante y las columnas las variables recolectadas (edad, sexo, nivel de ansiedad).
 
----
-
 ## Estadísticas para variables cualitativas
 
 Cuando los datos son cualitativos, los resúmenes más comunes son [@Agresti2018]:
@@ -46,6 +44,47 @@ $$
 - Media = 6.8  
 - Mediana = 6  
 - Moda = 6  
+
+### La Media Aritmética ($\bar{X}$)
+
+La **media** es el promedio aritmético de los datos. Se define como la suma de todos los valores dividida por el número total de observaciones.
+
+Para el análisis de datos psicológicos, utilizaremos la notación estándar:
+- $N$: Tamaño de la muestra.
+- $X_i$: Valor de la observación individual.
+- $\bar{X}$: Media de la muestra.
+
+$$\bar{X} = \frac{\sum_{i=1}^{N} X_i}{N}$$
+
+> **Nota:** La media actúa como el "centro de gravedad" de los datos. Si los representáramos físicamente, sería el punto de equilibrio exacto.
+
+::: {.rmdtip}
+Ejercicio Práctico: El efecto de los valores extremos (Outliers)
+
+**Contexto:** Como futuros psicólogos, deben entender que los datos representan realidades. Imaginen el viaje de un estudiante a su parcial, el tiempo de traslado a la universidad puede verse afectado por factores externos como marchas o bloqueos, generando datos "atípicos" que distorsionan nuestro análisis estadístico.
+
+**Instrucciones:** 
+En grupos, utilicen sus calculadoras para analizar el nivel de **Estrés Percibido** (escala 1-100) en un grupo de estudiantes de 4to semestre de la UCB antes de un examen parcial.
+
+El grupo típico: Calculen la media de estrés de estos 5 estudiantes:
+
+**Estudiante A:** 45 pts | **Estudiante B:** 52 pts | **Estudiante C:** 48 pts | **Estudiante D:** 50 pts | **Estudiante E:** 47 pts
+
+1. Suma total ($\sum X_i$): ________
+2. Media ($\bar{X}_1$): ________
+
+El impacto del Outlier (Valor Extremo): Imagina que un sexto estudiante llega al aula. Ha tenido un accidente menor en el "Teleférico" y llega en crisis, con un puntaje de estrés de **98 pts**.
+
+Calculen la nueva media para el grupo ($N=6$):
+1. Nueva suma: ________
+2. Nueva media ($\bar{X}_2$): ________ 
+
+**Discusión:**
+
+1. ¿La nueva media ($\bar{X}_2$) describe realmente el nivel de estrés del "estudiante promedio" de este grupo? ¿O el valor extremo está "arrastrando" la media hacia arriba de forma engañosa?
+2. Si tú fueras el psicólogo del bienestar estudiantil de la UCB y ves solo el promedio del los 6 estudiantes, ¿qué decisión tomarías sobre el grupo?
+3. ¿Qué alternativa existe? ¿Por qué?
+:::
 
 ## Medidas de dispersión
 

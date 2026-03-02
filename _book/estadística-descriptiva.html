@@ -23,7 +23,7 @@
 <meta name="author" content="MSc. Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2026-02-09" />
+<meta name="date" content="2026-03-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -83,6 +83,7 @@ div.csl-indent {
 }
 </style>
 
+<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
@@ -126,7 +127,10 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="2.1" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#ordenaci%C3%B3n-de-los-datos"><i class="fa fa-check"></i><b>2.1</b> Ordenación de los datos</a></li>
 <li class="chapter" data-level="2.2" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#estad%C3%ADsticas-para-variables-cualitativas"><i class="fa fa-check"></i><b>2.2</b> Estadísticas para variables cualitativas</a></li>
-<li class="chapter" data-level="2.3" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#medidas-de-resumen-tendencia-central"><i class="fa fa-check"></i><b>2.3</b> Medidas de resumen (Tendencia central)</a></li>
+<li class="chapter" data-level="2.3" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#medidas-de-resumen-tendencia-central"><i class="fa fa-check"></i><b>2.3</b> Medidas de resumen (Tendencia central)</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#la-media-aritm%C3%A9tica-barx"><i class="fa fa-check"></i><b>2.3.1</b> La Media Aritmética (<span class="math inline">\(\bar{X}\)</span>)</a></li>
+</ul></li>
 <li class="chapter" data-level="2.4" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#medidas-de-dispersi%C3%B3n"><i class="fa fa-check"></i><b>2.4</b> Medidas de dispersión</a></li>
 <li class="chapter" data-level="2.5" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#medidas-de-forma"><i class="fa fa-check"></i><b>2.5</b> Medidas de forma</a>
 <ul>
@@ -240,7 +244,6 @@ El enfoque más común es el <strong>enfoque tabular</strong>, que dispone la in
 <li><strong>Columnas</strong>: cada columna corresponde a una <strong>variable</strong> (por ejemplo, edad, sexo, puntaje en una escala).</li>
 </ul>
 <p><em>Ejemplo:</em> en un cuestionario aplicado a 5 estudiantes, las filas representan a cada estudiante y las columnas las variables recolectadas (edad, sexo, nivel de ansiedad).</p>
-<hr />
 </div>
 <div id="estadísticas-para-variables-cualitativas" class="section level2 hasAnchor" number="2.2">
 <h2><span class="header-section-number">2.2</span> Estadísticas para variables cualitativas<a href="estadística-descriptiva.html#estad%C3%ADsticas-para-variables-cualitativas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -280,6 +283,40 @@ Especialmente útil en variables cualitativas o discretas.</p></li>
 </li>
 <li>Moda = 6</li>
 </ul>
+<div id="la-media-aritmética-barx" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> La Media Aritmética (<span class="math inline">\(\bar{X}\)</span>)<a href="estadística-descriptiva.html#la-media-aritm%C3%A9tica-barx" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>La <strong>media</strong> es el promedio aritmético de los datos. Se define como la suma de todos los valores dividida por el número total de observaciones.</p>
+<p>Para el análisis de datos psicológicos, utilizaremos la notación estándar:
+- <span class="math inline">\(N\)</span>: Tamaño de la muestra.
+- <span class="math inline">\(X_i\)</span>: Valor de la observación individual.
+- <span class="math inline">\(\bar{X}\)</span>: Media de la muestra.</p>
+<p><span class="math display">\[\bar{X} = \frac{\sum_{i=1}^{N} X_i}{N}\]</span></p>
+<blockquote>
+<p><strong>Nota:</strong> La media actúa como el “centro de gravedad” de los datos. Si los representáramos físicamente, sería el punto de equilibrio exacto.</p>
+</blockquote>
+<div class="rmdtip">
+<p>Ejercicio Práctico: El efecto de los valores extremos (Outliers)</p>
+<p><strong>Contexto:</strong> Como futuros psicólogos, deben entender que los datos representan realidades. Imaginen el viaje de un estudiante a su parcial, el tiempo de traslado a la universidad puede verse afectado por factores externos como marchas o bloqueos, generando datos “atípicos” que distorsionan nuestro análisis estadístico.</p>
+<p><strong>Instrucciones:</strong>
+En grupos, utilicen sus calculadoras para analizar el nivel de <strong>Estrés Percibido</strong> (escala 1-100) en un grupo de estudiantes de 4to semestre de la UCB antes de un examen parcial.</p>
+<p>El grupo típico: Calculen la media de estrés de estos 5 estudiantes:</p>
+<p><strong>Estudiante A:</strong> 45 pts | <strong>Estudiante B:</strong> 52 pts | <strong>Estudiante C:</strong> 48 pts | <strong>Estudiante D:</strong> 50 pts | <strong>Estudiante E:</strong> 47 pts</p>
+<ol style="list-style-type: decimal">
+<li>Suma total (<span class="math inline">\(\sum X_i\)</span>): ________</li>
+<li>Media (<span class="math inline">\(\bar{X}_1\)</span>): ________</li>
+</ol>
+<p>El impacto del Outlier (Valor Extremo): Imagina que un sexto estudiante llega al aula. Ha tenido un accidente menor en el “Teleférico” y llega en crisis, con un puntaje de estrés de <strong>98 pts</strong>.</p>
+<p>Calculen la nueva media para el grupo (<span class="math inline">\(N=6\)</span>):
+1. Nueva suma: ________
+2. Nueva media (<span class="math inline">\(\bar{X}_2\)</span>): ________</p>
+<p><strong>Discusión:</strong></p>
+<ol style="list-style-type: decimal">
+<li>¿La nueva media (<span class="math inline">\(\bar{X}_2\)</span>) describe realmente el nivel de estrés del “estudiante promedio” de este grupo? ¿O el valor extremo está “arrastrando” la media hacia arriba de forma engañosa?</li>
+<li>Si tú fueras el psicólogo del bienestar estudiantil de la UCB y ves solo el promedio del los 6 estudiantes, ¿qué decisión tomarías sobre el grupo?</li>
+<li>¿Qué alternativa existe? ¿Por qué?</li>
+</ol>
+</div>
+</div>
 </div>
 <div id="medidas-de-dispersión" class="section level2 hasAnchor" number="2.4">
 <h2><span class="header-section-number">2.4</span> Medidas de dispersión<a href="estadística-descriptiva.html#medidas-de-dispersi%C3%B3n" class="anchor-section" aria-label="Anchor link to header"></a></h2>

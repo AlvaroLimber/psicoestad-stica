@@ -16,6 +16,7 @@ estadística-descriptiva
 ordenación-de-los-datos
 estadísticas-para-variables-cualitativas
 medidas-de-resumen-tendencia-central
+la-media-aritmética-barx
 medidas-de-dispersión
 medidas-de-forma
 asimetría-as
