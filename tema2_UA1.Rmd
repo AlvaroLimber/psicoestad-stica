@@ -50,6 +50,7 @@ $$
 La **media** es el promedio aritmético de los datos. Se define como la suma de todos los valores dividida por el número total de observaciones.
 
 Para el análisis de datos psicológicos, utilizaremos la notación estándar:
+
 - $N$: Tamaño de la muestra.
 - $X_i$: Valor de la observación individual.
 - $\bar{X}$: Media de la muestra.
@@ -68,11 +69,11 @@ En grupos, utilicen sus calculadoras para analizar el nivel de **Estrés Percibi
 
 El grupo típico: Calculen la media de estrés de estos 5 estudiantes:
 
-* **Estudiante A:** 45 pts 
-* **Estudiante B:** 52 pts 
-* **Estudiante C:** 48 pts 
-* **Estudiante D:** 50 pts 
-* **Estudiante E:** 47 pts
+* Estudiante A=45 pts 
+* Estudiante B=52 pts 
+* Estudiante C=48 pts 
+* Estudiante D=50 pts 
+* Estudiante E=47 pts
 
 1. Suma total ($\sum X_i$): ________
 2. Media ($\bar{X}_1$): ________
